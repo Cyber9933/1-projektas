@@ -122,4 +122,80 @@ sentence2+=dictionary[6]+'. ';
 console.log(sentence2);
 console.log('-----------------------');
 
+let index=0;
+let sentence3='Patiekalui reikes: ';
+
+sentence3+=dictionary[index]+', ';
+index+=1;
+
+sentence3+=dictionary[index]+', ';
+index+=1;
+
+sentence3+=dictionary[index]+', ';
+index+=1;
+
+sentence3+=dictionary[index]+', ';
+index+=1;
+
+sentence3+=dictionary[index]+', ';
+index+=1;
+
+sentence3+=dictionary[index]+', ';
+index+=1;
+
+sentence3+=dictionary[index]+'. ';
+index+=1;
+console.log(sentence3);
+
+console.log('------------------------');
+
+/*let k=0;
+k=k+1;
+k+=1;
+k++;
+*/
+
+let k=0;
+let sentence4='Patiekalui reikes: ';
+sentence4+=dictionary[k++]+', ';
+sentence4+=dictionary[k++]+', ';
+sentence4+=dictionary[k++]+', ';
+sentence4+=dictionary[k++]+', ';
+sentence4+=dictionary[k++]+', ';
+sentence4+=dictionary[k++]+', ';
+sentence4+=dictionary[k++]+'. ';
+
+console.log(sentence4);
+
+console.log('---------------');
+
+let j=0;
+let sentence5='Patiekalui reikes: ';
+sentence5+=dictionary[++j]+', ';
+sentence5+=dictionary[++j]+', ';
+sentence5+=dictionary[++j]+', ';
+sentence5+=dictionary[++j]+', ';
+sentence5+=dictionary[++j]+', ';
+sentence5+=dictionary[++j]+', ';
+sentence5+=dictionary[++j]+'. ';
+console.log(sentence5);
+
+console.log('---------------');
+
+
+let i=-1;
+let sentence6='Patiekalui reikes: ';
+sentence6+=dictionary[++i]+', ';
+sentence6+=dictionary[++i]+', ';
+sentence6+=dictionary[++i]+', ';
+sentence6+=dictionary[++i]+', ';
+sentence6+=dictionary[++i]+', ';
+sentence6+=dictionary[++i]+', ';
+sentence6+=dictionary[++i]+'. ';
+
+console.log(sentence6);
+
+console.log('---------------');
+
+
 
