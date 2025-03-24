@@ -56,3 +56,49 @@ if (4>2) {
         console.log('karsta');
     } 
     
+    const temp3=-55;
+
+    if (temp3<0) {
+        console.log('Salta');
+    }
+
+    if (temp3<10){
+        console.log('Ne');
+    } 
+
+    if (temp3<22){
+        console.log('Silta');      
+    }else{
+        console('Karsta');
+    }
+
+    if (4===4) {
+        console.log('tenkina');        
+    }else{
+        console.log('NE-tenkina');     
+    }
+
+    if (4!==4) {
+        console.log('tenkina');        
+    }else{
+        console.log('NE-tenkina');     
+    }
+
+    if (4!=4) {
+        console.log('tenkina');        
+    }else{
+        console.log('NE-tenkina');     
+    }
+
+    //blogas variantas neatskiria teksto nuo skaiciaus
+    if (4=='4') {
+        console.log('tenkina');        
+    }else{
+        console.log('NE-tenkina');     
+    }
+// geras - griezta lygybe - patikrina duomenu tipa, netenkina nes vienas number kitas string
+    if (4==='4') {
+        console.log('tenkina');        
+    }else{
+        console.log('NE-tenkina');     
+    }
