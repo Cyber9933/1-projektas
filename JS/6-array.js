@@ -152,7 +152,8 @@ console.log('------------------------');
 /*let k=0;
 k=k+1;
 k+=1;
-k++;
+k++;didina vienu po
+++k;didina vienu pries
 */
 
 let k=0;
