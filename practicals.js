@@ -168,6 +168,6 @@ tellNum(skaiciai1);
 
 
 console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
-/*Patikrinkite, ar sarase yra tam tikrsas skaicius.
+/*Patikrinkite, ar sarase yra tam tikras skaicius.
         a. Pavyzdys: Patikrinkite, ar sarase[1,2,3,4]
         */

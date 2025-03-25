@@ -196,5 +196,13 @@ console.log(text[0] + text[1]);
 //Zodyje "Sachmatai" pirmoji raide yra "S".
 const game = 'Sachmatai';
 const gameSentence = `Zodyje ${game} pirmoji raide yra "S".`;
+const gameSentence2= `Zodyje ${game} pirmoji raide yra "${game[0]}".`
+console.log(gameSentence2);
 console.log(gameSentence);
+
+
+const word1='ruduo';
+const wordSymbolCount1=word1.length;
+console.log(wordSymbolCount1);
+console.log(word1);
 
