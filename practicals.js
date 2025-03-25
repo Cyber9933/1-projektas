@@ -143,3 +143,31 @@ function filmoZiureti(filmasA,filmasB, filmasC, zanras, Balas)
 }
 filmoZiureti(film1, film2, film5, reitingas, zanras)
 
+console.log('--------------------------------')
+
+/*
+const skaiciai1 = [1, 2, 3];
+
+function addNum (sk)
+{
+    return (sk[0]+sk[1]+sk[2]);
+}
+
+function tellNum (sk)
+{
+    console.log(sk[0]);
+}
+
+//let suma = addNum(skaiciai1);
+console.log(addNum(skaiciai1));
+
+tellNum(skaiciai1);
+
+*/
+
+
+
+console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
+/*Patikrinkite, ar sarase yra tam tikrsas skaicius.
+        a. Pavyzdys: Patikrinkite, ar sarase[1,2,3,4]
+        */
