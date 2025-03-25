@@ -12,7 +12,7 @@
     "string": "node --watch ./js/2-string.js",
     "number": "node --watch ./js/1-number.js",
     "js": "node --watch ./index.js",
-    "praktiniai": "node --watch ./practical.js",
+    "practical": "node --watch ./practicals.js",
     "nd": "node --watch ./nd.js",
     "adult": "node --watch ./task/adult.js",
     "multiply": "node --watch ./task/multiply.js",
