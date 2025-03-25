@@ -165,3 +165,9 @@ o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
 const p1='Pomidoras';
 const bkk='Bandykite dar karta.';
 
+/* skaiciu daugyba
+*/
+function multiply(a,b){
+    return a*b;
+}
+console.log(multiply(2,3));

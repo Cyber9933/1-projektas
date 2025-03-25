@@ -71,3 +71,18 @@ function MokinioVidurkis (mokinys)
 MokinioVidurkis(Mokinys1)
 MokinioVidurkis(Mokinys2)
 MokinioVidurkis(Mokinys3)
+
+
+/*
+1 uzduotis - MOKYTOJO SUVESTINE:
+ -Susikurkite bent 6 saraso (array) tipo kintamuosius, kuriu pirmas narys yra mokinioi vardas, o toliau yra 5 skaiciaus tipo mokinio pazymiai;
+ -sukurkite funkvija, kuri padaro  siuos veiksmus
+        -i console isveda mokinio varda;
+        -i console isveda mokinio papzymiu vidurki ir pranesa ar mokinys islaike ar neislaike kurso;
+        jei mokinys neilaiko kiurso, parasykite  ar mokinys gaves viena gera iverti galetu islaikyti.
+
+2 uzduotis - FILMU REKOMENDACIJOS:
+-Susikurkite bent 5 saraso tipo kintamuosius, kuriu pirmas narys yra filmo pavadinimas, antras narys yra filmo zanras, o trecias narys yra skaiciaus tipo filmo ivertis
+-Susikurkite 2 kintamuosius kurie -pirmas nurodo jusu megstama zanra ir antras nurodo jusu norima matyti filmo iverti;
+-padarykite funkcija, kuri ir pasirinktu 3filmu, pagal jusu norima zanra ir iverti isveda i console kokie filma jums patiktu. Jei joks filmas netinka, turi pranesti
+*/
