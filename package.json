@@ -4,6 +4,7 @@
   "description": "Aprasymas",
   "main": "index.js",
   "scripts": {
+    "for": "node --watch ./js/8-for.js",
     "typeof": "node --watch ./js/7-typeof.js",
     "array": "node --watch ./js/6-array.js", 
     "if": "node --watch ./js/5-if.js",
@@ -15,6 +16,7 @@
     "practical": "node --watch ./practicals.js",
     "nd": "node --watch ./nd.js",
     "adult": "node --watch ./task/adult.js",
+    "multitable": "node --watch ./task/multitable.js",
     "multiply": "node --watch ./task/multiply.js",
     "marks-average": "node --watch ./task/marks-average.js",
     "text-size": "node --watch ./task/text-size.js",

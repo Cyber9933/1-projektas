@@ -22,3 +22,4 @@ console.log(marksAverage([8,'n',4,7]));
 console.log(marksAverage('labas')); 
 console.log(marksAverage(true)); 
 
+array[0]
