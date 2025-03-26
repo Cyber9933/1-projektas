@@ -69,7 +69,7 @@ if (4>2) {
     if (temp3<22){
         console.log('Silta');      
     }else{
-        console('Karsta');
+        console.log('Karsta');
     }
 
     if (4===4) {

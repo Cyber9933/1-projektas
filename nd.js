@@ -138,15 +138,34 @@ let a4=a1+' '+a2+' '+a3;
 console.log(a4);
 
 console.log('-----3-----');
+//1-2+3-4+5;
 
-const sum=1-2+3-4+5;
-console.log(sum);
+const sum=[1,2,3,4,5];
+const visaSuma=sum[0]-sum[1]+sum[2]-sum[3]+sum[4];
+
+console.log(visaSuma);
+
+
+
+
+
+function suma(num1, num2, num3, num4, num5) 
+{
+    return num1-num2+num3-num4+num5;
+}
+const sk=suma(1,2,3,4,5);
+console.log(sk);
+
 
 console.log('-----4-----');
 
-const sakinys='ka galvoji,' ;
-const sakinys2='pavasaris?';
-console.log(sakinys+' '+sakinys2);
+
+const tekstas=['dar','ne','visai','atejo','pavasaris'];
+const visasTekstas=tekstas[0]+','+' '+tekstas[1]+','+' '+tekstas[2]+','+' '+tekstas[3]+','+' '+tekstas[4];
+
+console.log(visasTekstas);
+
+
 
 
 
@@ -160,10 +179,51 @@ tai į console išvesti žodį “Pomidoras”,
 o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
 
 */
+console.log('----- KINTAMUJU PALYGINIMAS-----');
+console.log('-----1-----');
+
+const pom=('Pomidoras');
+const Bando=('Bandykite dar karta.');
+
+function pavadinimas () {
+
+}
+console.log('Pomidoras');
+if (4>2) {
+console.log('Bandykite dar karta.');
+}
 
 
-const p1='Pomidoras';
-const bkk='Bandykite dar karta.';
+
+function palyginimas()
+{
+  
+
+    if(sk>8)
+    {
+        console.log("10 didesnis");
+    }
+    const temp3=-55;
+
+    if (temp3<0) {
+        console.log('Salta');
+    }
+
+    if (temp3<10){
+        console.log('Ne');
+    } 
+
+    if (temp3<22){
+        console.log('Silta');      
+    }else{
+        console.log('Karsta');
+    }
+    
+}      
+ 
+   
+    
+
 
 /* skaiciu daugyba
 */
@@ -171,3 +231,114 @@ function multiply(a,b){
     return a*b;
 }
 console.log(multiply(2,3));
+
+console.log('----------CIKLO for PANAUDOJIMAS----------');
+
+console.log('----------1----------');
+/*
+Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+0 … 0
+0 … 4
+0 … 100
+574 … 815
+-50 … 50
+-70 … 30
+
+
+*/
+function intervalSum(start, end){
+    let sum=0;
+    for (let i=start; i<=end; i++){
+        sum+=i;
+    }
+    return sum;
+}
+console.log(intervalSum(0, 0));
+console.log(intervalSum(0, 4));
+console.log(intervalSum(574, 815));
+console.log(intervalSum(-50, 50));
+console.log(intervalSum(-70, 30));
+
+
+console.log('----------2----------');
+/*
+panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+pvz.: “abcdef” -> “fedcba”
+
+*/
+
+
+function backToEnd(text){
+    let reversed='vasara';
+    for (let i=text.length; i<=0; i++)
+        {
+        reversed+=text[i];
+    }
+    return reversed;
+}
+console.log(backToEnd('vasara'));
+
+
+
+
+console.log('----------3----------')
+
+/*  
+Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
+0 - 11
+8 - 31
+-18 - 18
+rezultatą pateikti tokiu formatu:
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+
+
+*/
+
+/*
+function countDivisibleNumbers(start, end) {
+    // Skaičiuojame skaičius, besidalijiančius be liekanos iš 3
+    let countBy3 = 0;
+    for (let i = start; i <= end; i++) {
+        if (i % 3 === 0) {
+            countBy3++;
+        }
+    }
+*/
+function countNumbers(start, end){
+    let count3=0;
+    for (let i=start; i<=end; i++){
+              
+        if(i%3===0);
+        {
+         count3++;   
+        }
+    }
+    
+
+    let count5=0;
+    for (let i=start; i<=end; i++){
+              
+        if(i%5===0);
+        {
+         count5++;   
+        }
+    }
+    
+
+    let count7=0;
+    for (let i=start; i<=end; i++){
+              
+        if(i%7===0);
+        {
+         count7++;   
+        }
+    }
+    return `skaiciu intervale ${start} ir ${end}, besidalijaniu be liekanos iš 3 yra ${count3} vienetai. skaiciu intervale ${start} ir ${end}, besidalijaniu be liekanos iš 5 yra ${count5} vienetai.skaiciu intervale ${start} ir ${end}, besidalijaniu be liekanos iš 7 yra ${count7} vienetai.`
+}
+console.log(countNumbers(0, 11));
+console.log(countNumbers(8, 31));
+console.log(countNumbers(-18, -18));
+
+console.log('-------------');

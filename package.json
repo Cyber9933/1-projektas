@@ -18,6 +18,7 @@
     "adult": "node --watch ./task/adult.js",
     "multitable": "node --watch ./task/multitable.js",
     "multiply": "node --watch ./task/multiply.js",
+    "interval-sum": "node --watch ./task/interval-sum.js",
     "marks-average": "node --watch ./task/marks-average.js",
     "text-size": "node --watch ./task/text-size.js",
     "test": "echo \"Error: no test specified\" && exit 1"

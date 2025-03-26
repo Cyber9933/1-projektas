@@ -171,3 +171,63 @@ console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
 /*Patikrinkite, ar sarase yra tam tikras skaicius.
         a. Pavyzdys: Patikrinkite, ar sarase[1,2,3,4]
         */
+
+
+        let n=3
+        for (let i=1; i<20; i++)
+        {
+                if (i%n===0)
+                {
+                        console.log(i);
+                }
+        }
+        console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
+        let c=3
+        for (let i=1; i<10; i++)
+        {
+                c+='*'
+                        console.log(c)
+                }
+        
+
+//kintamuju for ciklas is kito galo
+let b=[3,5,8];
+for (let i=1; i<b.length; i++){
+        console.log(b[1])
+}
+console.log('-----------------')
+// funkcijos
+
+let saule='*';
+let debeselis='8'
+function funkcija(gele)
+{
+        console.log('labas'+ gele)
+}
+console.log('Lina')
+console.log('rytas')
+funkcija(saule);
+funkcija(debeselis)
+
+//su return
+console.log('-----------------');
+
+//jei console po funkcijos, turi buti funkcijoje return.jei console yra funkcijoje, tada nereikia return
+let skaiciusA=5
+function addNum(sk)
+{
+        let sum=(8*15-6+17*9/2)/sk;
+        let sum2=2+2;
+        return sum2
+}
+let Galutinis=addNum(skaiciusA)*10
+console.log(addNum(skaiciusA));
+
+if (addNum(saule)==true)
+{
+
+}
+else (addNum())
+{
+console.log('padarete klaida');
+}

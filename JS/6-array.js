@@ -42,29 +42,29 @@ paprastieji - vienaskaita; const number=
 masyvai - daugiskaita; const numbers=
 */
 
-const numbers=[10,2,8,4,6];
-const totalSum1=numbers[0]+numbers[1]+numbers[2]+numbers[3]+numbers[4];
+const tekstas=[10,2,8,4,6];
+const totalSum1=tekstas[0]+tekstas[1]+tekstas[2]+tekstas[3]+tekstas[4];
 console.log(totalSum1);
 
 
 let totalSum2=0;
 
-totalSum2=totalSum2+numbers[0];
-totalSum2=totalSum2+numbers[1];
-totalSum2=totalSum2+numbers[2];
-totalSum2=totalSum2+numbers[3];
-totalSum2=totalSum2+numbers[4];
+totalSum2=totalSum2+tekstas[0];
+totalSum2=totalSum2+tekstas[1];
+totalSum2=totalSum2+tekstas[2];
+totalSum2=totalSum2+tekstas[3];
+totalSum2=totalSum2+tekstas[4];
 console.log(totalSum2);
 /*
 ctrl+d pazymeti visus skaicius
 ctrl+l copint po viena eilute
 */
 let totalSum3=0
-totalSum3+=numbers[0];
-totalSum3+=numbers[1];
-totalSum3+=numbers[2];
-totalSum3+=numbers[3];
-totalSum3+=numbers[4];
+totalSum3+=tekstas[0];
+totalSum3+=tekstas[1];
+totalSum3+=tekstas[2];
+totalSum3+=tekstas[3];
+totalSum3+=tekstas[4];
 console.log(totalSum3);
 
 const dictionary=['pomidoras', 'agurkas', 'bulve', 'kefyras', 'druska', 'svogunu laiskai', 'lasiniai'];

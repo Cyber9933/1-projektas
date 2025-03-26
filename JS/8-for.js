@@ -128,3 +128,4 @@ for (let i=0; i<names.length; i++){
     console.log(s);
     
 }
+//Suskaiciuoti ka gausime susumavus skaicius intervale imtinai 0..
