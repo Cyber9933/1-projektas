@@ -167,9 +167,9 @@ tellNum(skaiciai1);
 
 
 
-console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
+console.log('------------------UZDUOTYS su IF ir sararais (array-----------)');
 /*Patikrinkite, ar sarase yra tam tikras skaicius.
-        a. Pavyzdys: Patikrinkite, ar sarase[1,2,3,4]
+        a. Pavyzdys: Patikrinkite, ar sarase[1,2,3,4] ar yra 3
         */
 
 
@@ -181,8 +181,8 @@ console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
                         console.log(i);
                 }
         }
-        console.log('------------------UZDUOTYS su IF ir sarais (array-----------)');
-        let c=3
+        console.log('------------------UZDUOTYS su IF ir sararais (array-----------)');
+        let c=''
         for (let i=1; i<10; i++)
         {
                 c+='*'
@@ -204,7 +204,7 @@ function funkcija(gele)
 {
         console.log('labas'+ gele)
 }
-console.log('Lina')
+console.log('Labas')
 console.log('rytas')
 funkcija(saule);
 funkcija(debeselis)
@@ -231,3 +231,218 @@ else (addNum())
 {
 console.log('padarete klaida');
 }
+
+
+/*Patikrinkite, ar sarase yra tam tikras skaicius.
+        a. Pavyzdys: Patikrinkite, ar sarase[1,2,3,4] ar yra 3
+        */
+
+const Sarasas=[1,2,3,4];
+function ArTrejetas (S3)
+{       if(S3[0]===3)
+        {
+                console.log('YraTrejetas');
+        }    
+        if(S3[1]===3)
+                {
+                        console.log('YraTrejetas');
+                }  
+                if(S3[2]===3)
+                        {
+                                console.log('YraTrejetas');
+                        }  
+                        if(S3[3]===3)
+                                {
+                                        console.log('YraTrejetas');
+                                }     
+}
+
+ArTrejetas(Sarasas);
+console.log('------------------');
+const Sarasas2=[1,2,3,4];
+
+function ArTrejetas (S4)
+{       let ArS4=false;
+        if(S4[0]===3)
+        {
+                ArS3=true;
+        }    
+        if(S4[1]===3)
+                {
+                        ArS4=true;
+                }  
+                if(S4[2]===3)
+                        {
+                                ArS4=true;
+                        }  
+                        if(S4[3]===3)
+                                {
+                                        ArS4=true;
+                                }     
+        if (ArS4===true)
+        {
+                console.log('Yra3')
+        }
+                
+}
+
+
+
+
+
+console.log('---------------');
+/*Patikrinkite, ar masyvas tuscias.
+        a.Pvz: Patirkrinkite, ar sarasas[] yra tuscias
+        */
+console.clear();
+
+let eile=[];
+let yraTuscia=false;
+
+function Tuscia()
+{  
+        if (eile.length===0)
+        {        
+        yraTuscia=true;
+        }
+
+        if (yraTuscia===true)
+         {
+                console.log('Eile yra tuscia');
+         }
+                else{                {
+                        console.log('Eile nera tuscia');
+                        
+                }
+         
+        
+
+ }
+}
+Tuscia();
+
+console.log('-------3--------');    
+/*Nustatyti, ar sarase yra teigiamas skaicius.
+        a. pvz patikrinkite ar sarase[1,-2,3,-4] yra teigamu skaiciu
+        */
+
+let sarasasTeig=[1,-2,3,-4];
+
+function teigiami(teig)
+{
+        let teigSkaiciu=[];
+        let skaicius=0;
+
+         if (teig[0] > 0) {
+        teigSkaiciu[skaicius] = teig[0];
+        skaicius++;
+    }
+        if (teig[1] > 0) {
+        teigSkaiciu[skaicius] = teig[1];
+        skaicius++;
+    }
+        if (teig[2] > 0) {
+        teigSkaiciu[skaicius] = teig[2];
+        skaicius++;
+    }
+         if (teig[3] > 0) {
+        teigSkaiciu[skaicius] = teig[3];
+        skaicius++;
+    }
+
+        console.log(teigSkaiciu);
+                                
+}
+teigiami(sarasasTeig)
+
+console.log('-------4---------------');
+
+//Patikrinkite, ar visi saraso skaiciai yra lyginiai.
+//a.Pvz: Patrikrinkite, ar[2,4,6] yra tik lyginiai skaiciai.
+
+let sarasaLyg=[2,4,6];
+function lyginiai(skaicius) 
+{
+          return skaicius %2===0;
+}
+console.log(sarasaLyg);
+
+let sarasaLyg3=[2,4,6];
+function Lyginiai2(skaiciusLyg)
+{
+        if (skaiciusLyg %2===0)
+        {
+                console.log(`${skaiciusLyg} yra ne lyginis`);
+                return true;
+        }
+        else
+        {
+                console.log(`${skaiciusLyg} yra  lyginis`);
+                return false;
+                
+        }
+}
+
+console.log(Lyginiai2(sarasaLyg3));
+
+
+console.log('-------5-----');
+/*Patikrinkite, ar sarase yra neigiamas skaicius.
+        a. pvz patikrinkite ar sarase[3,5,-2] yra neigiamas
+        */
+
+        let sarasasNeig=[3,5,-2];
+
+        function Neigiami(neig)
+        {
+                let neigSkaiciu=[];
+                let skaicius=0;
+        
+                 if (neig[0] < 0) {
+                neigSkaiciu[skaicius] = neig[0];
+                skaicius++;
+            }
+                if (neig[1] < 0) {
+                neigSkaiciu[skaicius] = neig[1];
+                skaicius++;
+            }
+                if (neig[2] < 0) {
+                neigSkaiciu[skaicius] = neig[2];
+                skaicius++;
+            
+                }
+                console.log(neigSkaiciu);
+                                        
+        }
+        Neigiami(sarasasNeig);
+
+        console.log('--------6------');
+
+        //Patikrinkite, ar pirmas skaicius sarase yra didesnis uz paskutini.
+        //      a. PVZ: Patikrinkite, ar pirmas kaicius sarase [1,3,5] yra didesnis uz paskutini.
+
+       /* let didesnis=[1,3,5];
+        function didesnisUz(sk15)
+        {
+                let didesnisSkaic=[];
+                ds=1;
+                if(ds>didesnis[2])
+                {
+                        'yra Didesnis'===true;
+                }
+                else if (ds>=didesnis[2])
+                {
+                        'yra Didesnis'===true
+                }
+                else (ds<didesnis[2])
+                {
+                        'yra mazesnis'===false;
+                }
+                console.log(didesnisSkaic);
+                                
+        }
+didesnisUz(didesnis);
+        */
+
+console.log('------7------');
+

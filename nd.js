@@ -268,15 +268,21 @@ pvz.: “abcdef” -> “fedcba”
 */
 
 
-function backToEnd(text){
-    let reversed='vasara';
-    for (let i=text.length; i<=0; i++)
-        {
-        reversed+=text[i];
+function stringReverse(text) {
+    if (typeof text !== 'string') {
+        return 'Reikalinga string tipo reiksme.';
     }
-    return reversed;
+
+    let result = '';
+
+    for (let i = 0; i < text.length; i++) {
+        result = text[i] + result;
+    }
+
+    return result;
 }
-console.log(backToEnd('vasara'));
+console.log(stringReverse('vasara'));
+
 
 
 
@@ -306,37 +312,19 @@ function countDivisibleNumbers(start, end) {
         }
     }
 */
-function countNumbers(start, end){
-    let count3=0;
-    for (let i=start; i<=end; i++){
-              
-        if(i%3===0);
-        {
-         count3++;   
-        }
-    }
-    
+function countNumbers(start, end, divider) 
+{
+    let count = 0;
 
-    let count5=0;
-    for (let i=start; i<=end; i++){
-              
-        if(i%5===0);
-        {
-         count5++;   
-        }
-    }
-    
-
-    let count7=0;
-    for (let i=start; i<=end; i++){
-              
-        if(i%7===0);
-        {
-         count7++;   
-        }
-    }
-    return `skaiciu intervale ${start} ir ${end}, besidalijaniu be liekanos iš 3 yra ${count3} vienetai. skaiciu intervale ${start} ir ${end}, besidalijaniu be liekanos iš 5 yra ${count5} vienetai.skaiciu intervale ${start} ir ${end}, besidalijaniu be liekanos iš 7 yra ${count7} vienetai.`
+    const trueStart = start;
+    for (let i = trueStart; i <= end; i += divider) {
+        count++;
+   }
+    return `Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos iš ${divider} yra ${count} vienetai.`;
 }
+
+
+
 console.log(countNumbers(0, 11));
 console.log(countNumbers(8, 31));
 console.log(countNumbers(-18, -18));
