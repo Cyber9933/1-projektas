@@ -424,7 +424,7 @@ pvz.: “abcdef” -> “fedcba”
 */
 
 
-function stringReverse(text) {
+function atvirksciai(text) {
     if (typeof text !== 'string') {
         return 'Reikalinga string tipo reiksme.';
     }
@@ -437,7 +437,7 @@ function stringReverse(text) {
 
     return result;
 }
-console.log(stringReverse('vasara'));
+console.log(atvirksciai('vasara'));
 
 
 
@@ -492,13 +492,13 @@ function stringReverse(text) {
         return '!!!!!!!!!';
     }
 
-    let result = '';
+    let result1 = '';
 
     for (let i = 0; i < text.length; i++) {
-        result = text[i] + result;
+        result1 = text[i] + result1;
     }
 
-    return result;
+    return result1;
 }
 console.log(stringReverse('aeiouAEIOU'));
 
@@ -565,4 +565,50 @@ function calculator(a,b){
   
     
  
+  /*       CODEWARS
   
+  Complete the function which returns the weekday according to the input number:
+
+  1 returns "Sunday"
+  2 returns "Monday"
+  3 returns "Tuesday"
+  4 returns "Wednesday
+  5 returns "Thursday"
+  6 returns "Friday"
+  7 returns "Saturday"
+  Otherwise returns "Wrong, please enter a number between 1 and 7" 
+  */ 
+
+
+
+ /*function whatday(num){
+    const days=['Sunday', 'Monday', 'Tuesday','Wednesday','Thursday','Friday','Saturday' ];
+    return days[num-1]||'nera'
+ };
+ console.log(whatday(1));
+ console.log(whatday(2));
+ console.log(whatday(3));
+ console.log(whatday(4));
+ console.log(whatday(5));
+ console.log(whatday(6));
+ 
+ */
+/*
+
+
+
+*/
+
+console.log('-------FUNKCIJOS------------');
+console.log('-----1. Funkcija pavadinimu "tusciaFunkcija"');
+// a. nepriima jokiu kintamuju;
+
+
+// b. neatlieka jokios vidinies logikos;
+
+
+// c. grazina boolean tipo reiksme "false"
+
+
+// d. TESTAS: console.log(tusciaFunkcija());          rezultatas:false
+
