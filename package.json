@@ -15,6 +15,7 @@
     "js": "node --watch ./index.js",
     "practical": "node --watch ./practicals.js",
     "nd": "node --watch ./nd.js",
+    "biggestNumber": "node --watch ./task/biggestNumber.js",
     "adult": "node --watch ./task/adult.js",
     "digit-count": "node --watch ./task/digit-count.js",
     "interval-count": "node --watch ./task/interval-count.js",
