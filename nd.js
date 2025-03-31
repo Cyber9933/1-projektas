@@ -611,4 +611,91 @@ console.log('-----1. Funkcija pavadinimu "tusciaFunkcija"');
 
 
 // d. TESTAS: console.log(tusciaFunkcija());          rezultatas:false
+/*
+const chai = pakeist("visa");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
 
+describe("Tests", () => {
+  it("test", () => {
+    assert.deepEqual(number([]), [], 'Empty array should return empty array');
+    assert.deepEqual(number(["a", "b", "c"]), ["1: a", "2: b", "3: c"], 'Return the correct line numbers');                
+  });
+});
+*/
+console.log('-----2. Funkcija pavadinimu "Daugyba"');
+
+console.log('-----3. Funkcija pavadinimu "skaitmenuKiekisSkaiciuje"');
+
+console.log('-----4. Funkcija pavadinimu "Funkcija pavadinimu "didziausiasSkaiciusSarase"');
+
+function penkiKeturi(list)
+{   
+    let penki=0;
+    for(let i=0; i<list.length;i++){
+        if(list[i]>penki){
+            penki=list[i];
+        }
+    }
+    return penki;
+}
+console.log(penkiKeturi([1]),'number --->', 1);
+console.log(penkiKeturi([4]),'number --->', 4);
+
+console.log(penkiKeturi([3,2,7]),'number --->', 3);
+console.log(penkiKeturi([3,-2,3]),'number --->', 3);
+
+
+console.log('-----5. Funkcija pavadinimu "isrinktiRaides"');
+
+console.log('-----6. Funkcija pavadinimu "dalyba"');
+
+
+
+
+
+
+/* CODEWARS
+function DNAStrand(dna) {
+ 
+    const complements = {
+      'A': 'T',
+      'T': 'A',
+      'C': 'G',
+      'G': 'C'
+    };
+    
+
+    return dna.split('').map(nucleotide => complements[nucleotide]).join('');
+  }
+    console.log(DNAStrand("ATTGC")); 
+    console.log(DNAStrand("GTAT"));  
+
+    */
+
+    /* function bouncingBall(h, bounce, window) {
+        
+        if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) {
+          return -1;
+        }
+        
+
+        let count = 1;
+        
+       
+        let height = h * bounce;
+        
+   
+        while (height > window) {
+
+          count += 2;
+          
+     
+          height *= bounce;
+        }
+        
+        return count;
+      }
+      console.log(bouncingBall(3,0.66,1.5));
+      console.log(bouncingBall(3,1,1.5))
+      */
