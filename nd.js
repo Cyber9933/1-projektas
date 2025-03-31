@@ -181,45 +181,201 @@ o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
 */
 console.log('----- KINTAMUJU PALYGINIMAS-----');
 console.log('-----1-----');
+//a. kuris didesnis
 
-const pom=('Pomidoras');
-const Bando=('Bandykite dar karta.');
+const num10=3;
+const num11=5;
 
-function pavadinimas () {
-
+if (num10<num11) {
+    console.log('Pomidoras');
+}else{
+    console.log('Bandykite dar karta.'); 
 }
-console.log('Pomidoras');
-if (4>2) {
-console.log('Bandykite dar karta.');
-}
 
+// b. kuris mazesnis
 
-
-function palyginimas()
-{
-  
-
-    if(sk>8)
-    {
-        console.log("10 didesnis");
-    }
-    const temp3=-55;
-
-    if (temp3<0) {
-        console.log('Salta');
-    }
-
-    if (temp3<10){
-        console.log('Ne');
-    } 
-
-    if (temp3<22){
-        console.log('Silta');      
-    }else{
-        console.log('Karsta');
-    }
+if (num10>num11) {
+    console.log('Pomidoras');
+}else{
+    console.log('Bandykite dar karta.!');
     
-}      
+}
+
+
+//c. ar jie lygus?
+
+if (num10===num11){
+    console.log('Pomidoras');   
+}else{
+    console.log('Bandykite dar karta!');
+    
+}
+
+// d. ar jie nelygus?
+
+if (num10!==num11){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandykite dar karta!')
+}
+
+// e. kuris didesnis arba lygus
+if (num10>=num11)
+{
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandykite dar karta!');
+    
+}
+
+
+
+// f. kuris mazesnis arba lygus
+if (num10<=num11){
+    console.log('Pomidoras');
+}else{
+    console.log('Bandyk dar karta!');
+    
+}
+
+console.log('---------2----');
+// Isvesti  teksto tipo kintamajiuju ilgius
+ const ilgis1='Pomidoras'
+ const ilgis2='Bandyk dar karta!'
+ console.log(ilgis1.length);
+ console.log(ilgis2.length);
+ 
+ 
+
+console.log('---------3----');
+//tarpusavyje palyginte teksto tipo kintamuju ilgius
+//a. kuris didesnis
+if (ilgis1.length>ilgis2.length){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!')
+};
+
+//b. kuris mazesnis
+
+if (ilgis1.length<ilgis2.length){
+    console.log('Pomidoras');
+    
+}else {
+    console.log('Bandyk dar karta!')
+};
+
+//c. ar jie lygus
+if (ilgis1.length===ilgis2.length){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+};
+
+//d. ar jie nelygus
+
+if (ilgis1.length!==ilgis2.length){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+}
+//e. kuris didesnis arba lygus
+if (ilgis1.length>=ilgis2.length){
+    console.log('Pomidoras');
+    
+}else {
+    console.log('Bandyk dar karta!');
+    
+};
+
+//f. kuris mazesnis arba lygus
+
+if (ilgis1.length<=ilgis2.length){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+};
+console.log('---------4---');
+// Isvesti saraso tipo kintamaji
+
+
+const sar1=['Pomidoras','BandykDarKarta'];
+
+
+console.log(sar1.length);
+
+
+console.log('---------5---');
+// Tarpusavyje palyginti saraso tipo kintamuju ilgius:
+// a. kuris didesnis
+if (sar1.length[0]>sar1.length[1]) {
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!')
+    
+};
+
+// b. kuris mazesnis
+
+if(sar1.length[0]<sar1.length[1]){
+    console.log('Pomidoras');
+    
+}else{
+   
+        console.log('Bandyk dar karta!')
+            
+}
+// c. ar jie lygus
+
+if (sar1.length[0]===sar1.length[1]){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+}
+
+
+// d. ar jie nelygus
+
+if (sar1.length[0]!==sar1.length[1]){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+}
+// e. kuris didesnis arba lygus
+
+if (sar1.length[0]>=sar1.length[1]){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+}
+// f. kuris mazesnis arba lygus
+if (sar1.length[0]<=sar1.length[1]){
+    console.log('Pomidoras');
+    
+}else{
+    console.log('Bandyk dar karta!');
+    
+}
+
+
+
+ 
  
    
     
@@ -330,3 +486,83 @@ console.log(countNumbers(8, 31));
 console.log(countNumbers(-18, -18));
 
 console.log('-------------');
+
+function stringReverse(text) {
+    if (typeof text !== 'aeiouAEIOU') {
+        return '!!!!!!!!!';
+    }
+
+    let result = '';
+
+    for (let i = 0; i < text.length; i++) {
+        result = text[i] + result;
+    }
+
+    return result;
+}
+console.log(stringReverse('aeiouAEIOU'));
+
+
+
+
+
+
+function pakeisti(tekstas)
+{
+    let rezultatas1='';
+    for(let i=0; i<tekstas.length; i++)
+    {
+    let raide=tekstas[i];
+    if (raide==='a'|| raide==='e'|| raide==='i'|| raide==='o'|| raide==='u'|| raide==='A'|| raide==='E'|| raide==='I'|| raide==='O'|| raide==='U')
+    {
+        rezultatas1=rezultatas1+'!';
+    }
+    else
+    {
+        rezultatas1=rezultatas1+raide;
+    }
+    }
+    return rezultatas1
+}
+
+let naudTekastas='aeiouAEIOU';
+let naujTekastas=pakeisti(naudTekastas);
+console.log(naujTekastas);
+
+
+function highAndLow(numbers) {
+    
+    const numArray = numbers.split(" ").map(Number);
+    
+   
+    const highest = Math.max(...numArray);
+    const lowest = Math.min(...numArray);
+    
+    
+    return `${highest} ${lowest}`;
+}
+
+console.log(highAndLow("1 2 3 4 5")); // "5 1"
+console.log(highAndLow("1 9 3 4 -5")); // "9 -5"
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // "42 -9"
+
+
+
+
+//-1  =>  false
+ //0  =>  true
+ //3  =>  false
+ //4  =>  true
+//25  =>  true
+//26  =>  false
+
+function calculator(a,b){
+    return a+b;
+  }
+  console.log(calculator(1,2));
+
+ 
+  
+    
+ 
+  
