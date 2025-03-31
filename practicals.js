@@ -421,28 +421,150 @@ console.log('-------5-----');
         //Patikrinkite, ar pirmas skaicius sarase yra didesnis uz paskutini.
         //      a. PVZ: Patikrinkite, ar pirmas kaicius sarase [1,3,5] yra didesnis uz paskutini.
 
-       /* let didesnis=[1,3,5];
+        let didesnis=[1,3,5];
         function didesnisUz(sk15)
         {
-                let didesnisSkaic=[];
-                ds=1;
-                if(ds>didesnis[2])
+                if(sk15[0]>sk15[sk15.length-1])
                 {
-                        'yra Didesnis'===true;
+                        console.log('pirmas didesnis uz paskutini'); 
+                        return true;   
                 }
-                else if (ds>=didesnis[2])
+                else 
                 {
-                        'yra Didesnis'===true
-                }
-                else (ds<didesnis[2])
-                {
-                        'yra mazesnis'===false;
+                        console.log('pirmas nera didesnis uz paskutini');
+                        
+                        return false;
                 }
                 console.log(didesnisSkaic);
                                 
         }
 didesnisUz(didesnis);
-        */
+        
 
 console.log('------7------');
+
+//ar saraso [1,2,3,4,5,6] ilgis yra didesnis nei 5
+
+
+let sarasoIlgis=[1,2,3,4,5,6];
+function Ilgis5(il5) {
+        if(il5[0]<il5[il5.length-1])
+        {
+                console.log('ilgis didesnis nei 5');
+                return true
+        }
+        else
+        {
+                console.log('ilgis mazesnis nei 5');
+        return false;
+        }
+}
+Ilgis5(sarasoIlgis);
+
+
+console.log('------8------');
+
+//Patikrinti ar ['obuolys,'bananas', 'vysnia'] yra tikr tekstai
+
+let tekstai=[`'obuolys','bananas','vysnia'`];
+
+function arVisiTekstai(tekst2) {
+        for (let i = 0; i < tekst2.length; i++) {
+            if (typeof tekst2[i] !== 'string') {
+                console.log('Ne visi yra tekstai');
+                return false;
+            }
+        }
+                console.log('Visi yra tekstai');
+                return true;
+    }
+    console.log(arVisiTekstai(tekstai));
+    
+
+console.log('------9------');
+
+//Pstikrinkite, ar didziausias skaiciu sarase [2,5,12,4] yra didesnis nei 10
+let sarasas3=[2,5,12,4];
+
+
+
+
+
+console.log('------10------');
+//Patikrinkite ar [2,2,2,2,2,5,6] turi daugiau nei 3 skaiciaus 2 elementus.
+
+let elementas=[2,2,2,2,2,5,6];
+
+
+console.log('------------');
+
+
+
+
+
+
+console.log('----------FOR CIKLAS---------');
+
+console.log('----------1---------');
+// skaiciai nuo 1 iki 10 naudojant for cikla
+
+        let f=1
+        for (let i=1; i<=10; i++)
+        {
+                if (i%f===0)
+                {
+                        console.log(i);
+                }
+        }
+
+
+console.log('----------2---------');
+// skaiciai nuo 10 iki 1 naudojant for cikla
+
+let f1=1
+for (let i=10; i>=1; i--)
+{
+        if (i%f1===0)
+        {
+                console.log(i);
+        }
+}
+console.log('----------3---------');
+
+//spausdinti kekviena lygini skaiciu nuo 0 iki 20
+
+
+
+
+console.log('----------4---------');
+console.log('----------5---------');
+console.log('----------6---------');
+console.log('----------7---------');
+
+// atspausdinti 7 daugybos lentele
+
+for(let n=7; n<8; n++){
+        console.log('n:',n);
+        for(let i=1; i<=10; i++){
+            console.log(`${n}*${i}=${n*i}`); 
+        }
+        
+    }
+
+
+console.log('----------8---------');
+
+        let c4=''
+        for (let i=1; i<10; i++)
+        {
+                c4+='*'
+                        console.log(c4)
+                }
+
+console.log('----------9---------');
+console.log('----------10---------');
+console.log('----------11---------');
+console.log('----------12---------');
+console.log('----------13---------');
+
 
