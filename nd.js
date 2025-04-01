@@ -699,3 +699,5 @@ function DNAStrand(dna) {
       console.log(bouncingBall(3,0.66,1.5));
       console.log(bouncingBall(3,1,1.5))
       */
+
+      // bandymas
