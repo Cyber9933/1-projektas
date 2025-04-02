@@ -723,4 +723,36 @@ console.log(result);
 
 //
 //
-//
+function findUniq(arr) 
+{
+    let difNo=0;
+
+    for (let i=0; i<arr.legth; i++ ){
+
+    if(arr[i]<difNo)
+    {
+
+    difNo=arr[i]
+    }
+}
+    return difNo;
+}   
+
+  console.log(findUniq([ 1, 1, 1, 2, 1, 1 ])) ;
+
+
+  function validatePIN (pin) {
+    if (pin.length!==4){
+      return false;
+    }
+    for(let i=0; i<pin.length; i++){
+        if (pin[i]<'0'||pin[i]>'6'){
+      return false;
+    }
+  }
+  return true;
+}
+console.log(validatePIN('1234'));
+console.log(validatePIN('12345'));
+console.log(validatePIN('a234'));
+
