@@ -243,3 +243,108 @@ console.log('pomidoras'.slice(-1));
 console.log('pomidoras'.slice(-6,-2));
 
 
+//trim - pasalina space'us is priekio ir galo, is centro nesalina. naudotinas tekstuose pvz registracijos forma "  user ", po to neveiks login""user"
+console.clear();
+console.log('\ntrim');
+
+console.log(`'${'pomidoras'.trim()}"`);
+console.log(`'${'       pomidoras'.trim()}"`);
+console.log(`'${'pomidoras     '.trim()}"`);
+console.log(`'${'   labas    rytas     '.trim()}"`);
+
+ //is galo nuvalo
+console.log(`'${'   labas    rytas     '.trimEnd()}"`);
+//is priekio nuvalo
+console.log(`'${'   labas    rytas     '.trimStart()}"`);
+
+
+// kaip atpazinti kad lauke yra vienas zodis --->jei yra space
+
+//split - dalinti i atskiras dalis, naudojama tik STRING (netinka object, numbers). ksaito kaip ARRAY
+console.clear();
+console.log('\nsplit');
+
+const t1='zodis';
+const t1Parts=t1.split();
+const t1Parts1=t1.split('o');
+const t1Parts2=t1.split('d');
+
+
+console.log(t1Parts);
+console.log(t1Parts1);
+console.log(t1Parts2);
+
+const t2='kultivatorius';
+const t2Parts=t2.split();
+const t2Parts1=t2.split('t');
+console.log(t2Parts);
+console.log(t2Parts1);
+
+const t3='Labas rytas Lietuva';
+const t3Parts=t3.split(' ')
+
+console.log(t3Parts);
+
+console.log('duona'.split('o'));
+//kai vaiksto tarp kapojimo vietu, neranda priekyje kapojamos dalies, todel dalina i nieka ''['', 'uona']. kapojimui butinai reikia dvieju daliu
+console.log('duona'.split('d')); 
+
+console.log('ana'.split('a'));
+
+console.log('vasara'.split('a'));
+console.log('vasara'.split(''));
+
+// lieka tuscias ARRAY, ribinis atevejis
+console.log(''.split(''));
+
+//sakiniu kiekio apskaiciavimas
+const t4='Labas. Ka tu. Ka tu veiki.';
+const senteceCount=t4.split('.').length-1;
+console.log(senteceCount);
+
+//galim splitint per kelis simbolius, bet jie turi buti kartu
+console.log('pomidoras'.split('dor'));
+console.log('ananasas'.split('na')); //(lieka ['a', '', 'nas'])
+
+console.log('--------');
+// kodel skirtingi simboliai turi savo kodus, kompiuterine abecele
+
+console.log(('a'.charCodeAt(0)));
+console.log(('A'.charCodeAt(0)));
+console.log(('ą'.charCodeAt(0)));
+console.log(('Ą'.charCodeAt(0)));
+
+if('A'>'a'){
+    console.log('daugiau');
+    
+}else{
+    console.log('maziau');
+    
+}
+// zodyne i toliau nei L, pirma didziosios, paskui mazosios
+
+if('Labas'>'iki'){
+    console.log('daugiau');
+    
+}else{
+    console.log('maziau');
+    
+}
+
+if('labas'>'iki'){
+    console.log('daugiau');
+    
+}else{
+    console.log('maziau');
+    
+}
+
+/*const s1=String.fromCharCode(65);
+console.log(s2);
+gali susirasti pagal koda simboli*/ 
+const s1=String.fromCharCode(968);
+console.log(s1);
+
+const s2=String.fromCharCode(9845);
+console.log(s2);
+//
