@@ -103,3 +103,4 @@ console.log(9**(1/2));
 console.log('kubine saknis');
 console.log(27**(1/3));
 console.log(64**(1/3));
+//

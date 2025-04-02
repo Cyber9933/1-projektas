@@ -197,3 +197,4 @@ const gn6=gotNumber(777);
 console.log(gotNumber(5));
 console.log(gotNumber(-13));
 console.log(gotNumber(777));
+//

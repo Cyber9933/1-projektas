@@ -18,3 +18,4 @@ console.log(isAdult(99),'-->', 'suauges');
 console.log(isAdult(18),'-->', 'suauges');
 console.log(isAdult(17),'-->', 'vaikas');
 console.log(isAdult(1),'-->', 'vaikas');
+//

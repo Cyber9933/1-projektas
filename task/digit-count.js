@@ -56,3 +56,4 @@ console.log(digitCount(1000000000000000), '-->', 16);
 console.log(digitCount(10000000000000000000), '-->', 20);
 console.log(digitCount(100000000000000000000), '-->', 21);
 console.log(digitCount(1000000000000000000000), '-->', 22);
+//

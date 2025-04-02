@@ -206,3 +206,4 @@ const wordSymbolCount1=word1.length;
 console.log(wordSymbolCount1);
 console.log(word1);
 
+//

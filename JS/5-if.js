@@ -102,3 +102,4 @@ if (4>2) {
     }else{
         console.log('NE-tenkina');     
     }
+//

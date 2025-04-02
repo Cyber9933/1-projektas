@@ -57,3 +57,4 @@ function intervalSum1(start, end) {
 console.log('a)', intervalSum1(-4, 2));
 console.log('a)', intervalSum1(-4, 0));
 console.log('a)', intervalSum1(-4, -2));
+//

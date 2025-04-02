@@ -129,3 +129,4 @@ for (let i=0; i<names.length; i++){
     
 }
 //Suskaiciuoti ka gausime susumavus skaicius intervale imtinai 0..
+//

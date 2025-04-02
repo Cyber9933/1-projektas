@@ -19,3 +19,4 @@ console.log(validName('PeTrAs'),'-->','Petras');
 console.log(validName('ona'),'-->','Ona');
 
 console.log('--------------');
+//

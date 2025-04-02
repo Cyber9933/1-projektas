@@ -23,3 +23,4 @@ console.log(marksAverage('labas'));
 console.log(marksAverage(true)); 
 
 array[0]
+//
