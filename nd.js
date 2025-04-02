@@ -701,3 +701,25 @@ function DNAStrand(dna) {
       */
 
       // bandy
+      // 
+      // 
+function sumOfPositives(arr) {
+
+  let sum = 0;
+  
+  // Einame per kiekvieną masyvo elementą
+  for (let i = 0; i < arr.length; i++) {
+    // Jei skaičius teigiamas, pridedame jį prie sumos
+    if (arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+  
+  return sum;
+}
+const result = sumOfPositives([1, -4, 7, 12]);
+console.log(result);
+
+
+//
+//
