@@ -132,7 +132,30 @@ const result=Math.abs(0.2-0.3+0.1)
 console.log(result);
 console.log(result<Number.EPSILON);
 
+console.clear();
 
 console.log('---------');
+const a=12.3456789;
+console.log(a);
+console.log(typeof a);
+
+console.log(typeof typeof a); //po antro karto naudojant typeof jis traktuojamas kaip stringas
+console.log(typeof typeof typeof a);
+console.log('string');
+
+const b=a.toFixed(4) // grazina stringo tipo ir nukerta 4 arba nuo 0iki20 galutinius skaitmenis
+console.log(b);
+console.log(typeof b);
+
+const c=parseFloat(b) // atgal po typeof grazina i number
+console.log(c);
+console.log(typeof c);
+
+console.log((3.14.toFixed(1)));
+
+
+
+
+
 
 

@@ -19,6 +19,7 @@
     "js": "node --watch ./index.js",
     "practical": "node --watch ./practicals.js",
     "nd": "node --watch ./nd.js",
+    "money:format": "node --watch ./task/money-format.js",
     "biggestNumber": "node --watch ./task/biggestNumber.js",
     "valid-name": "node --watch ./task/valid-name.js",
     "adult": "node --watch ./task/adult.js",
