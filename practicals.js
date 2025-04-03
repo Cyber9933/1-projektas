@@ -600,3 +600,358 @@ describe("Basic tests", () => {
 console.log(twoOldestAges([1, 2, 10, 8]));
 console.log(twoOldestAges([1, 5, 87, 45, 8, 8]));
 console.log(twoOldestAges([1, 3, 10, 0]));
+
+
+/* For ciklas
+
+*/
+console.log('----For Ciklas');
+// 1. Parasyti for cikla, kuris apskaiciuotu visu skaiciu nuo 5 iki 15 suma
+let sudetis=5
+for (let i=5; i<=15; i++){
+       
+       {
+
+        sudetis=sudetis+i
+       }
+}
+console.log(sudetis);
+
+// 2. Parasykite for cikla, kuris i console isvestu visas zodzio 'Vakaras' raides po viena
+
+
+let naujas1='Vakaras';
+for (let i=0; i<naujas1.length; i++)
+{
+        console.log(naujas1[i]);
+}
+
+
+// 3. Parasykite for cikla, kuris isvestu is seseto daugybos lentele
+
+for(let n=6; n<7; n++){
+        console.log('n:',n);
+        for(let i=1; i<=10; i++){
+            console.log(`${n}*${i}=${n*i}`); 
+        }
+        
+    }
+
+// 4. Parasykite for cikla, kuris i console isvestu nuo 5 iki 1, ir po vieneto (vietoje 0 i ekrana isvestu zodi 'BOOM')
+let nulis=('BOOM')
+for (let i=5; i>=1; i--){
+        console.log([i] + `${nulis}`);
+        
+}
+        
+
+
+// 5. Parasykite for cikla, kuris sudetu visus lyginius skaicius nuo 3 iki 18
+
+// 6. Parasykite for cikla, kuris isvestu visus saraso elemenetus  i console
+
+// 7. Parasykite for cikla, kuris is vardu saraso isvestu visus elementus, pridedamas ' Mano vardas-', console log eilutes pradzioje
+/*let vardas=['Rasa','Andrius'];
+for (let i=0; i<=vardas.length; i++){
+        vardas=`Mano vardas ${[1]}'
+}console.log(vardas);
+}
+
+*/
+
+// 8. Parasykite for cikla, kuris sudetu visus saraso skaitinius elementus
+
+// 9. Parasykite for cikla, kuris isvestu i console visus saraso elementus nuo paskutinio iki pirmo
+
+// 10. Parasykite for cikla, kuri isvestu i console tik tuos skaicius, jei jie yra pinigu reiksmes (1,2,5,10,20,50,100,200,500)
+
+for (let i=1; i<=500; i++){
+        if(i===1||i===2||i===5||i===10||i===20||i===50||i===100||i===200||i===500)
+                {console.log(i);
+
+                };
+}
+
+// 11. Parasykite for cikla, kuris is saraso Raides ['L','a','b','a','s'] sudeliotu kintamaji Zodis, kurio reiksme yra 'Labas'
+const raides=['L','a','b','a','s'];
+
+let naujas='';
+for (let i=0; i<raides.length; i++)
+{
+        naujas+=raides[i];
+}
+console.log(naujas);
+
+
+
+// 12. Parasykite for cikla, kuris atskirai atspausdintu kiekvieno zodzio  Programavimas raide.
+
+
+let naujas0='Programavimas';
+for (let i=0; i<naujas0.length; i++)
+{
+        console.log(naujas0[i]);
+}
+
+// 13. Parasykite for cikla, kuris sudaugintu skaicius nuo 2 iki 10. uz ciklo isveskite i console reiksme.
+let daugyba=2;
+for (let i=3; i<=10; i++)
+{
+        daugyba=daugyba*i;
+}
+
+console.log(daugyba);
+console.log('------');
+
+
+// 14. Parasykite for cikla, kuris apskaiciuotu visu nelyginiu skaiciu inuo 1 iki 30 suma
+
+let Nelyginis=0;
+for (let i=1; i<=30; i+=2)
+{
+        Nelyginis=Nelyginis+i;
+}
+console.log(Nelyginis);
+
+console.log('------');
+
+// 15. Parasykite for cikla, kuris i console isvestu skaicius nuo 20 iki 10
+for (let i=20; i>=10; i--){
+        console.log(i);
+}
+
+// 16. Parasykite for cikla, kuris i console isvesttu saraso RaidesAtbulai ['s', 'a', 'b', 'a', 'L'] elementus vienas nuo kito nuo galo iki pradzios
+
+const raidesAtbulai=['s', 'a', 'b', 'a', 'L'];
+for (let i=raidesAtbulai.length-1;i>=0; i--  ){
+        console.log(raidesAtbulai[i]);
+        
+}
+
+// 17. Parasykite for cikla, kurisi console isvestu ZodisAtbulas=samivamargorP' atskriras raides po kitos
+
+let raidesAtbulai1='samivamargorP';
+for (let i=0;i<=raidesAtbulai1.length; i++ ){
+        console.log(raidesAtbulai1[i]);
+        
+}
+// 18.Parasykite for cikla, kuris kuris i console isveda skaicius nuo 1 iki 100, Jei saraso skaicius dalinasi is7, papildomai i console isvedamas zodis lucky
+
+for (let i =1; i<=100; i++){
+       
+        if (i%7===0)
+        {
+               console.log('lucky'+i);
+                        
+        }else
+        {
+            console.log(i);    
+        } 
+        
+}
+// 19. Parasykite for cikla, kuris i console po viena atskirai isvestu dvigubas saraso Dvigubinti[2,3,6,8] reiksmes (Gaunasmas atsakymas [4,6,12,16])
+
+const dvigub=[2,3,6,8];
+for (let i=0; i<dvigub.length; i ++){
+        console.log(dvigub[i]*2);
+        
+}
+
+// 20. Parasykite for cikla, kuris is saraso DaugSkaiciu [2,14,10,100,502,8,0]isvestu visus skaicius, kurie yra mazesni uz 100
+const dvigub1=[2,14,10,100,502,8,0];
+for (let i=0; i<dvigub1.length; i ++){
+       if(dvigub1[i]<100){
+        console.log(dvigub1[i]);
+        
+       }
+        
+}
+
+// 21. Parasykite for cikla, kuris apskaiciuotu keik raidziu a yra zodyje abrakadabra
+
+// 22. Parasykite for cikla, kuris isvestu , kokios butu saraso PridesiuSakaiciu [2,8,88,14] elementu reiksmes, jei prie kiekvieno elemento pridetume dvejeta
+
+// 23. Parasykite for cikla, kuris
+
+// 24. Parasykite for cikla, kuris
+
+// 25. Parasykite for cikla, kuris
+
+console.log('----------FUNKCIJOS----------');
+
+// 1. Parasykite f-ja, kuri grazina dviejus skiaciu suma
+
+
+function suma(a,b){
+        return a+b;
+}
+console.log(suma(3,5));
+
+
+// 2. Parasykite f-ja, kuri grazina dvieju skaiciu skirtuma
+
+function skirtumas(a,b){
+        return a-b;
+}
+console.log(skirtumas(8,3));
+
+
+// 3. Parasykite f-ja, kuri grazina dvieju skaiciu sandauga
+function sandauga(a,b){
+        return a*b;
+}
+console.log(sandauga(3,5));
+
+
+// 4. Parasykite f-ja, kuri grazina dvieju skaiciu sandauga
+function dalyba (a,b){
+        return a/b;
+}
+console.log(dalyba(10,2));
+
+// 5.  Parasykite f-ja, kuri grazina dvieju skaiciu vidurki
+function vidurkis (a,b){
+        return (a+b)/2;
+}
+console.log(vidurkis (4,8));
+
+// 6.
+
+// 7. ===
+
+// 8. !==
+
+// 9.%
+
+// 10. 
+
+// 11.
+
+// 12.
+
+// 13. 
+
+// 14.
+
+// 15. 
+
+// 16.
+
+// 17.
+
+// 18.
+
+// 19.
+
+// 20. Parasykite funkcija, kuri patikrina ar skaicius yra didesnis nei 18 (pvz.,)
+
+function yra18(skaicius)
+{
+        if (skaicius>18){
+                return true;
+        }
+        else
+        {
+                return false;
+        }
+}
+console.log(yra18(28));
+console.log(yra18(15));
+
+
+// 21. Parasykite f-ja, kuri patikrina ar perduotas zodis 'labas'
+
+function arLabas(zodis){
+if (zodis==='labas'){
+        return true;
+}else{
+        return false;
+}
+}
+console.log(arLabas('labas'));
+console.log(arLabas('Labas'));
+
+// 22. Parasykite f-ja, kuri patikrina ar zodis yra ilgesnis nei 5
+function ilgesnis(zodis){
+if (zodis.length>5){
+        console.log(('ilgesnis nei 5'));
+        
+}else{
+        console.log(('trumpesnis'));
+        
+}
+}
+ilgesnis('namas');
+ilgesnis('pavasaris');
+
+
+
+// 23. Parasykite f-ja, kuri grazina pirmaja perduoto zodzio raide
+
+function firstLetter(raide){
+        return raide[0];
+}
+console.log(firstLetter('pavasaris'));
+
+// 24. Parasykite f-ja, kuri grazina paskutine perduoto zodzio raide
+
+function lastLetter(raide){
+        return raide[raide.length-1];
+}
+console.log(lastLetter('pavasaris'));
+
+// 25. Parasykite f-ja, kuri patikrina, ar zodis prasideda raide 'A'
+
+function firstLetterA(raide){
+        if ( raide[0]==='A'){
+                return true;
+}
+else{
+        return false
+}
+}
+console.log(firstLetterA('pavasaris'));
+console.log(firstLetterA('aciu'));
+console.log(firstLetterA('Aciu'));
+
+
+// 26. Parasykite f-ja, kuri grazina zodzio ilgi
+
+function letterLength(zodis){
+        return zodis.length
+}
+console.log(letterLength('pavasaris'));
+
+
+// 27. Parasyktie f-ja, kuri grazina 'Ilgas' arba 'Traumas', priklausoma nuo zodzio ilgio. Ilgas zodis yra 7 simboliu ilgio arba didesnis, o trumpas yra 6 simboliu arba trumpesnis
+
+function ilgiausias(zodis){
+        if (zodis.length>=7){
+               return 'ilgas';
+                
+        }else{
+                return 'trumpesnis';
+                
+        }
+        }
+        console.log(ilgiausias('namas'));
+        
+        console.log(ilgiausias('pavasaris'));
+
+// 28. Parasykite f-ja, kuri patikrina, ar du zodziai yra vienodi
+function vienodi(namas, namie)
+{
+if (namas===namie){
+        console.log('vienodi');
+        
+}else{
+        console.log('nevienodi');
+        
+}
+}
+vienodi('namas', 'namie');
+vienodi ('namas', 'namas');
+
+// 29.
+
+// 30.
