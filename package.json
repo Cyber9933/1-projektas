@@ -4,6 +4,7 @@
   "description": "Aprasymas",
   "main": "index.js",
   "scripts": {
+    "method:array": "node --watch ./js/13-method-array.js",
     "method:number": "node --watch ./js/12-method-number.js",
     "method": "node --watch ./js/11-method-string.js",
     "math": "node --watch ./js/10-math.js",
