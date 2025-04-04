@@ -819,6 +819,7 @@ console.log(vidurkis (4,8));
 
 // 7. ===
 
+
 // 8. !==
 
 // 9.%
@@ -955,3 +956,100 @@ vienodi ('namas', 'namas');
 // 29.
 
 // 30.
+
+console.log('-----------uzduotys--------------');
+
+
+const ManoMiestai = ["kaunas", 89, 'klaipėda', 307, 'marijampolė', 159, 'utena', 100]
+
+
+    function kurTolimiausiai (miestai, greitis, laikas)
+    {
+        let maxA = 0;
+        let kelias = greitis * laikas;
+        let maxM = 0;
+
+        for(let i = 0; i<miestai.length; i+=2)
+        {
+            //console.log(miestai[i]);
+            if(miestai[i+1]<= kelias && miestai[i+1]> maxA)
+            {
+                maxA = miestai[i+1];
+                maxM = i;
+            }
+        }
+        console.log(miestai[maxM] + ' ' + miestai[maxM+1]);
+
+    }
+
+    kurTolimiausiai(ManoMiestai, 80, 2)
+
+
+
+    function ArSpetume (miestai, miestas, laikas) //s = v*t 
+    {
+
+        for(let i = 0; i<miestai.length; i+=2)
+        {
+            if(miestai[i]===miestas)
+            {
+                if(miestai[i+1]/laikas <= 120)
+                {
+                    console.log("spesim " + miestai[i+1]/laikas)
+                }
+            }
+            else
+            {
+                console.log("miesto neradau")
+            }
+        }
+    }
+
+    ArSpetume(ManoMiestai, 'marijampolė', 2)
+
+
+    function ArUzteks (miestai, pinigai, Kkaina, deginam)
+    {
+        let kuras = 30 + pinigai/Kkaina;
+        let atstumas = kuras / deginam;
+        let maxA = 0
+        let maxM = 0
+        for(let i = 0; i<miestai.length; i+=2)
+            {
+                //console.log(miestai[i]);
+                if(miestai[i+1]<= atstumas && miestai[i+1]> maxA)
+                {
+                    maxA = miestai[i+1];
+                    maxM = i;
+                }
+            }
+
+        console.log(miestai[maxM] + ' ' + maxA)
+
+    }
+
+    ArUzteks(ManoMiestai, 10, 0.5, 0.5)
+
+
+const KelioSalygos = ['geras', 'prastas', 'taisomas', 'prastas'];
+
+function realusLaikas (miestai, salyga)
+{
+    for(let i = 0; i<miestai.length; i+=2)
+        {
+            if(salyga[i/2]==='geras')
+            {
+                console.log(miestai[i+1])
+            }
+            if(salyga[i/2]==='prastas')
+                {
+                    console.log(miestai[i+1]*1.5)
+                }
+                if(salyga[i/2]==='taisomas')
+                    {
+                        console.log(miestai[i+1]*2)
+                    }
+        }
+}
+
+realusLaikas(ManoMiestai, KelioSalygos)
