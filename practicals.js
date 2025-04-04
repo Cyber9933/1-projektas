@@ -647,19 +647,31 @@ for (let i=5; i>=1; i--){
 
 
 // 5. Parasykite for cikla, kuris sudetu visus lyginius skaicius nuo 3 iki 18
+for (let i=3; i<18; i++)
+{
+        if(i%2===0){
+                console.log(i);
+                
+        }
+}
+console.log('------');
 
 // 6. Parasykite for cikla, kuris isvestu visus saraso elemenetus  i console
-
+for (let i=0; i<=5; i++){
+        console.log(i);
+        }
+        console.log('------');
 // 7. Parasykite for cikla, kuris is vardu saraso isvestu visus elementus, pridedamas ' Mano vardas-', console log eilutes pradzioje
-/*let vardas=['Rasa','Andrius'];
-for (let i=0; i<=vardas.length; i++){
-        vardas=`Mano vardas ${[1]}'
-}console.log(vardas);
+let vardas=['Rasa','Andrius', 'Tomas'];
+for (let i=0; i<vardas.length; i++){
+        console.log(`Mano vardas ${vardas[i]}`)
 }
 
-*/
+
+
 
 // 8. Parasykite for cikla, kuris sudetu visus saraso skaitinius elementus
+
 
 // 9. Parasykite for cikla, kuris isvestu i console visus saraso elementus nuo paskutinio iki pirmo
 
