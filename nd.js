@@ -756,3 +756,40 @@ console.log(validatePIN('1234'));
 console.log(validatePIN('12345'));
 console.log(validatePIN('a234'));
 
+/*
+
+function arrayMadness(a, b) {
+    // Skaičiuojame kvadratų sumą pirmajam masyvui ir kubų sumą antrajam
+    let sumSquares = 0;
+    let sumCubes = 0;
+    
+    // Skaičiuojame pirmojo masyvo kvadratų sumą
+    for (let i = 0; i < a.length; i++) {
+      sumSquares += a[i] * a[i];
+    }
+    
+    // Skaičiuojame antrojo masyvo kubų sumą
+    for (let i = 0; i < b.length; i++) {
+      sumCubes += b[i] * b[i] * b[i];
+    }
+    
+    // Grąžiname palyginimo rezultatą
+    return sumSquares > sumCubes;
+  }
+console.log(arrayMadness([4,5,6],[1,2,3]));
+
+*/
+
+
+function arrayMadness(a, b) {
+    let number1=0;
+      let number2=0;
+      for( let i=0; i<a.length; i++){
+        number1+=a[i]*a[i];
+      }
+      for (let i=0;  i<b.length; i++){
+        number2+=b[i]*b[i]*b[i];
+      }
+      return number1>number2
+    }
+    console.log(arrayMadness([4,5,6],[1,2,3]))
