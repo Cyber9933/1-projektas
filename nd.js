@@ -761,6 +761,7 @@ console.log(validatePIN('a234'));
 function arrayMadness(a, b) {
     // Skaičiuojame kvadratų sumą pirmajam masyvui ir kubų sumą antrajam
     let sumSquares = 0;
+    
     let sumCubes = 0;
     
     // Skaičiuojame pirmojo masyvo kvadratų sumą
