@@ -894,6 +894,10 @@ console.log('-------');
   console.log('Bepasikulversciaudamasis'.includes('a'));
   console.log('Pomidoras'.indexOf('a'));
 
-  console.log("hello case".replace(" ",''));
-console.log("camel case word".replace(" ",''))
+  console.log('hello case'.toLocaleLowerCase());
+console.log('camel case word'.toLocaleLowerCase());
 
+console.log('camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
+
+console.log(`"camel case" -->'`+'camel case'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
+console.log(`"camel case word" -->'`+'camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
