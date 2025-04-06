@@ -898,6 +898,6 @@ console.log('-------');
 console.log('camel case word'.toLocaleLowerCase());
 
 console.log('camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
-
+// neteisingas sprendinys zemiau codewars
 console.log(`"camel case" -->'`+'camel case'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
 console.log(`"camel case word" -->'`+'camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
