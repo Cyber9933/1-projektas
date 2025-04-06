@@ -761,7 +761,7 @@ console.log(validatePIN('a234'));
 function arrayMadness(a, b) {
     // Skaičiuojame kvadratų sumą pirmajam masyvui ir kubų sumą antrajam
     let sumSquares = 0;
-    
+
     let sumCubes = 0;
     
     // Skaičiuojame pirmojo masyvo kvadratų sumą
@@ -794,3 +794,106 @@ function arrayMadness(a, b) {
       return number1>number2
     }
     console.log(arrayMadness([4,5,6],[1,2,3]))
+
+
+    console.log('------------------');
+    
+
+    function NumberDif(skaicius) {
+        // Paverčiam skaičių į tekstą
+        let numberText = "" + skaicius;
+        
+        // Rezultatų masyvas
+        let dalys = [];
+        
+        // Einame per kiekvieną skaitmenį
+        for (let i = 0; i < numberText.length; i++) {
+          let skaitmuo = numberText[i] * 1; // Paverčiam simbolį į skaičių padauginant iš 1
+          
+          // Jei skaitmuo nėra nulis
+          if (skaitmuo !== 0) {
+            // Apskaičiuojame daugiklį rankiniu būdu
+            let daugiklis = 1;
+            for (let j = 0; j < numberText.length - i - 1; j++) {
+              daugiklis = daugiklis * 10;
+            }
+            
+            // Pridedame rezultatą į masyvą paprastesniu būdu
+            dalys[dalys.length] = skaitmuo * daugiklis;
+          }
+        }
+        
+        // Sujungiame dalis rankiniu būdu
+        let rezultatas = "";
+        for (let i = 0; i < dalys.length; i++) {
+          rezultatas = rezultatas + dalys[i];
+          // Pridedame pliuso ženklą, jei tai ne paskutinis elementas
+          if (i < dalys.length - 1) {
+            rezultatas = rezultatas + " + ";
+          }
+        }
+        
+        return rezultatas;
+      }
+      
+      // Išbandome su pavyzdžiais
+      console.log(12 + ' --> "' + NumberDif(12) + '"');
+      console.log(45 + ' --> "' + NumberDif(45) + '"');
+      console.log(70304 + ' --> "' + NumberDif(70304) + '"');
+
+
+      function skaiciuPakeitimas(skaicius) {
+        let tekst = "" + skaicius;
+        let ats = "";
+        
+        for (let i = 0; i < tekst.length; i++) {
+          let sk = tekst[i];
+          
+          if (sk !== "0") {
+            let nuliai = "";
+            for (let j = 0; j < tekst.length - i - 1; j++) {
+              nuliai += "0";
+            }
+            
+            if (ats !== "") {
+              ats += " + ";
+            }
+            
+            ats += sk + nuliai;
+          }
+        }
+        
+        return ats;
+      }
+      
+      console.log(12 + ' --> "' + skaiciuPakeitimas(12) + '"');
+      console.log(45 + ' --> "' + skaiciuPakeitimas(45) + '"');
+      console.log(70304 + ' --> "' + skaiciuPakeitimas(70304) + '"');
+
+
+      /*
+12 --> "10 + 2"
+45 --> "40 + 5"
+70304 --> "70000 + 300 + 4"
+      */
+
+
+/*
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+*/
+
+function reverseWords(str) {
+    return str.split(' ').map(word => word.split('').reverse().join('')).join(' ');
+  }
+  
+  console.log(reverseWords("This is an example!"));
+  console.log(reverseWords("double  spaces")); 
+console.log('-------');
+
+  console.log('Bepasikulversciaudamasis'.includes('a'));
+  console.log('Pomidoras'.indexOf('a'));
+
+  console.log("hello case".replace(" ",''));
+console.log("camel case word".replace(" ",''))
+
