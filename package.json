@@ -4,6 +4,7 @@
   "description": "Aprasymas",
   "main": "index.js",
   "scripts": {
+    "arrow": "node --watch ./js/14-arrow.js",
     "method:array": "node --watch ./js/13-method-array.js",
     "method:number": "node --watch ./js/12-method-number.js",
     "method": "node --watch ./js/11-method-string.js",
@@ -20,6 +21,7 @@
     "js": "node --watch ./index.js",
     "practical": "node --watch ./practicals.js",
     "nd": "node --watch ./nd.js",
+    "fancy": "node --watch ./task/fancy-math.js",
     "names": "node --watch ./task/names-split-join.js",
     "money:format": "node --watch ./task/money-format.js",
     "biggestNumber": "node --watch ./task/biggestNumber.js",
