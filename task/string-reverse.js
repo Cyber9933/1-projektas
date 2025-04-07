@@ -59,5 +59,10 @@ console.log(stringReverse('alus'));
 console.log( stringReverse('vasara'));
 
 
-//
+
+
+
+
+
+
 

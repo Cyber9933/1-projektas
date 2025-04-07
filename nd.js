@@ -641,6 +641,8 @@ console.log(multiply('rytas',8));
 
 
 
+
+
 console.log('-----3. Funkcija pavadinimu "skaitmenuKiekisSkaiciuje"');
 
 
@@ -980,3 +982,42 @@ console.log(digitSum(99));
 console.log(digitSum(-32));
 
 
+console.log('------------------');
+
+function check(a, x) {
+  if (a.length === 0) {
+      return false;
+  }
+
+  for (let i = 0; i < a.length; i++) {
+      if (a[i] === x) {
+          return true;
+      }
+  }
+
+  return false;
+}
+
+
+
+
+function basicOp(operation, value1, value2){
+  const func={
+    '+':(value1, value2)=>value1+value2,
+    '-':(value1, value2)=>value1-value2,
+    '*':(value1, value2)=>value1*value2,
+    '/':(value1, value2)=>value1/value2,
+    
+  };
+    const optionToUse=func[operation]
+    if(optionToUse===undefined){
+    return 0;
+  }
+  return optionToUse(value1, value2)
+  }
+
+  console.log(basicOp('+', 4, 7)); // Expected output: 11
+  console.log(basicOp('-', 15, 18)); // Expected output: -3
+  console.log(basicOp('*', 5, 5)); // Expected output: 25
+  console.log(basicOp('/', 49, 7)); // Expected output: 7
+  

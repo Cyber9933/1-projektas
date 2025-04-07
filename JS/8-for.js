@@ -1,5 +1,10 @@
 /* FOR (loop) - cikklas   dirba iki tol kol tenkina 'i', jei uzduotis i<5 arba i++(padidina vienu)*
 bet iki/ arba nuo >5
+i - iteracijos numeris arba, tai kelintas cia kartas
+i=gali buti, 0,1,2,3 pradzia, bet dazniausiai 0
+i>,>=,<,<= sis ciklas dirba kol i<5, i<=5, i>5, i>=5, arba kitu kintamuoju
+i++,i--, i+=2, i-=2, i=i+2, i=i-2 kiekvina karta arba padidina arba sumazina i, arba eina per du zingsnius
+
 */
 
 for (let i=-5; i<5; i++) {
