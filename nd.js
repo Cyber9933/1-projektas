@@ -1020,4 +1020,64 @@ function basicOp(operation, value1, value2){
   console.log(basicOp('-', 15, 18)); // Expected output: -3
   console.log(basicOp('*', 5, 5)); // Expected output: 25
   console.log(basicOp('/', 49, 7)); // Expected output: 7
+
+
+  console.log('**********');
   
+  /*
+for example:
+
+alienLanguage("My name is John") should return "My NAMe Is JOHn"
+alienLanguage("this is an example") should return "THIs Is An EXAMPLe"
+alienLanguage("Hello World") should return "HELLo WORLd"
+A small hint: The first conversion of the entire string will make the code easier
+  */
+
+/*function alienLanguage(str) {
+    return str.split(' ').map(word => {
+        return word.split('').map((ali, index) => {
+            if (index % 2 === 0) {
+                return ali.toUpperCase();
+            } else {
+                return ali.toLowerCase();
+            }
+        }).join('');
+    }).join(' ');
+}
+console.log(alienLanguage("My name is John"));
+console.log(alienLanguage("this is an example"));
+console.log(alienLanguage("Hello World"));
+
+*/
+
+/*
+" Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
+"    Hello     World   "                  =>  "#HelloWorld"
+""                                        =>  false
+*/
+
+function generateHashtag(str) {
+    // Remove leading and trailing whitespace and split the string into words
+    const words = str.trim().split(/\s+/);
+
+    // If the resulting array is empty, return false
+    if (words.length === 0){
+        return false;
+    }
+
+    // Capitalize each word and join them with a hashtag
+    const hashtag = '#' + words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('');
+
+    // If the length of the hashtag is greater than 140 characters, return false
+    return hashtag.length > 40 ? false : hashtag;
+}
+console.log(generateHashtag(" Hello there thanks for trying my Kata"));
+console.log(generateHashtag("    Hello     World   "));
+console.log(generateHashtag(' '));
+
+
+console.log('**********');  
+
+/*
+
+*/

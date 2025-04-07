@@ -87,6 +87,7 @@ function textSize5(text) {
 }
 
 
+console.log('**********');
 
 
 //
