@@ -43,12 +43,3 @@ function correctSentence(text) {
 }
 
 console.log(correctSentence("Studentai: jonas, Maryte, peTras, ONA."));
-
-//case'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
-//console.log(`"camel case word" -->'`+'camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
-
-function camelCase(text) {
-    return text.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join('');
-}
-console.log(`"camel case word" -->'`+'camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
-console.log(`"camel case" -->'`+'camel case'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));

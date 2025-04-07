@@ -1,5 +1,8 @@
 /*
-TYPEOF - duomenu tipo nustatymo operatorius
+TYPEOF - duomenu tipo nustatymo operatorius nustato ar tai yra stringas('pavasaris')
+ ar tai yra number (12345) ar tai yra boolean (true/false) ar tai yra array (masyvas) 
+ ar tai yra object (objektas) ar tai yra function (funkcija) 
+ ar tai yra undefined (nenurodyta reiksme) ar tai yra null (nurodyta nera reiksmes)
 */
 console.log((typeof 5));
 console.log((typeof -5));

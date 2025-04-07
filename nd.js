@@ -611,21 +611,39 @@ console.log('-----1. Funkcija pavadinimu "tusciaFunkcija"');
 
 
 // d. TESTAS: console.log(tusciaFunkcija());          rezultatas:false
-/*
-const chai = pakeist("visa");
-const assert = chai.assert;
-chai.config.truncateThreshold=0;
+function tusciaFunkcija(){
+  return false;
+}
+console.log(tusciaFunkcija());
 
-describe("Tests", () => {
-  it("test", () => {
-    assert.deepEqual(number([]), [], 'Empty array should return empty array');
-    assert.deepEqual(number(["a", "b", "c"]), ["1: a", "2: b", "3: c"], 'Return the correct line numbers');                
-  });
-});
-*/
+
 console.log('-----2. Funkcija pavadinimu "Daugyba"');
+/*
+function daugyba(a,b){
+  return a*b;
+}
+console.log(daugyba(2,7));
+*/
+function multiply(a,b){
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return 'turi buti skaicius';
+  }
+    return a*b
+}
+
+console.log(multiply(2,5));
+console.log(multiply(-2,5));
+console.log(multiply(-2,-5));
+console.log(multiply(2,8));
+console.log(multiply(2,'labas'));
+console.log(multiply('rytas',8));
+
+
+
 
 console.log('-----3. Funkcija pavadinimu "skaitmenuKiekisSkaiciuje"');
+
+
 
 console.log('-----4. Funkcija pavadinimu "Funkcija pavadinimu "didziausiasSkaiciusSarase"');
 
@@ -901,3 +919,64 @@ console.log('camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slic
 // neteisingas sprendinys zemiau codewars
 console.log(`"camel case" -->'`+'camel case'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
 console.log(`"camel case word" -->'`+'camel case word'.split(' ').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(''));
+
+function toCamelCase(str) {
+  let words = str.split(' ');
+  let result = '';
+  
+  for (let word of words) {
+    result += word.charAt(0).toUpperCase() + word.slice(1);
+  }
+  
+  return result;
+}
+console.log(toCamelCase(`camel case word`)); 
+  console.log(toCamelCase(`hello case`)); 
+  console.log('**********');
+  
+
+  function digitCount(n) {
+    if (typeof n !== 'number') {
+        return 'Reikalingas skaicius.';
+    }
+
+    // if (n === Infinity || n === -Infinity || isNaN(n)) {
+    //     return 'Reikalingas normalus skaicius.';
+    // }
+
+    if (!isFinite(n)) {
+        return 'Reikalingas normalus skaicius.';
+    }
+
+    const numberAsString = '' + n;
+    let count = numberAsString.length;
+
+    if (n % 1 !== 0) {
+        count--;
+    }
+    if (n < 0) {
+        count--;
+    }
+
+    return count;
+}
+
+console.log(digitCount(10));
+
+
+function digitSum(number) {
+  
+  let numStr = Math.abs(number).toString();
+  let sum = 0;
+  
+  for (let i = 0; i < numStr.length; i++) {
+    sum += parseInt(numStr[i]);
+  }
+  
+  return sum;
+}
+console.log(digitSum(10));
+console.log(digitSum(99));
+console.log(digitSum(-32));
+
+

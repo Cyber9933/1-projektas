@@ -55,3 +55,6 @@ console.log(fancyMath1(7,'-',5));
 console.log(fancyMath1(7,'*',5));
 console.log(fancyMath1(7,'/',5));
 console.log(fancyMath1(7,'**',5));
+
+
+  
