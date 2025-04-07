@@ -164,8 +164,42 @@ console.log(c1234);
 //galima pernaudoti ta pati masyva
 const c111=c1.concat(c1,c1,c1);
 console.log(c111);
+console.clear();
+
 
 console.log('------10--------');
+
+//splice gali priimti du prarametrus strartine ir kiek elementu istrinti. nurodai nuo kurios pozicijos istrinti
+
+const h=[11,22,33,44,55,];
+console.log(h);
+
+h.splice(1,3);
+console.log(h);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
