@@ -177,13 +177,120 @@ console.log(h);
 h.splice(1,3);
 console.log(h);
 
+console.log('***********');
 
 
+// MAP is esamo mamsyvo, gauti nauja papildoma masyva
+
+const k=[10,2,8,4,6];
+//const k2=[20,4,16,8,12];
+const k2=[];
 
 
+//daugina is 2,3,4,5, taip pat gali prideti prie pagrindinio masyvo skaiciaus arba atimti
+for (const n of k){
+    k2.push(n*2);
+}
+console.log(k2);
+
+function triple(n){
+    return n*3;
+}
+const k3=k.map(triple);
+console.log(k3);
+
+const quadro=n=>n*4;
+const k4=k.map(quadro);
+console.log(k4);
+
+const k5=k.map(n=>n*5);
+console.log(k5);
+
+const k6=k.map(n=>n);
+console.log(k6);
+
+const k7=k.map(n=>n-1);
+console.log(k7);
+
+const k71=k.map(n=>n+1);
+console.log(k71);
 
 
+const dict=['pomidoras', 'agurkas', 'bulve']; 
+const dict2=dict.map(w=>w[0]); //randa pirma raide
+console.log(dict2);
 
+const dict3=dict.map(w=>w.length);  // randa ilgi
+console.log(dict3);
+
+
+const people=[
+    {name:'Jonas', age: 99}, 
+    {name:'Maryte', age:88},
+    {name:'Petras', age:77},
+    {name:'Ona', age:66},
+];
+const people100=people.map(person=>`${person.name} liko ${100-person.age} metai`);
+/*[
+    'Jonas liko 1 metai.
+];
+*/
+console.log(people100);
+
+// kaip padaryti masyva, kad butu tik tu asmenu vardai
+
+const peopleNames=people.map(person=>person.name);
+console.log(peopleNames)
+
+const peopleAges=people.map(person=>person.age);
+console.log(peopleAges)
+
+//prideda papildo papildoma informacija
+const peopleMarried=people.map(person=>{
+    person.isMarried=true;
+    person.luckyNumber=13;
+    return person;
+});
+console.log(peopleMarried);
+
+
+console.clear();
+//FILTER
+
+
+const p=[10,2,8,4,6];
+const p5=[]
+// i masyva sutraukti narius kurie yra didesni nei 5
+
+
+for(const n of p){
+    if (n>5){
+        p5.push(n);
+    }
+}
+console.log(p5);
+
+
+/// filter pvz
+
+const p6=p.filter(n=>n>6);
+console.log(p6);
+
+
+const p7=p.filter(n=>n<7);
+console.log(p7);
+
+const p8=p.filter(n=> n>2 && n<8);
+console.log(p8);
+
+
+const text5=['Labas','','rytas','', 'Lietuva'];
+
+const text5Updated=text5.filter(t=>t.length>0);
+console.log(text5Updated);
+
+const text5Updated2=text5.filter(t=>t);  //geriau nenaudoti, praskipina nes tuscias tekstas yra negatyvus
+console.log(text5Updated2);
 
 
 
