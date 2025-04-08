@@ -834,25 +834,109 @@ console.log(vidurkis (4,8));
 
 // 8. !==
 
-// 9.%
+// 9. funkicija dalina is5 be liekanos
+
+function dalijasIs5(skaicius){
+        if (skaicius%5){
+                return true
+        }else{
+                return false
+        }
+};
+console.log(dalijasIs5(15));
+
 
 // 10. 
+function ar100(skaicius){
+        if (skaicius===100){
+                return true
+        }else{
+                return false
+        }
+}
+console.log(ar100(200));
 
 // 11.
 
+function ar10(skaicius){
+        if (skaicius>=10){
+                return true
+        }else{
+                return false
+        }
+}
+console.log(ar10(200));
+
 // 12.
 
-// 13. 
+function kurisDidesnis(n1,n2){
+        if(n1>n2){
+                return n1;
+        }else{
+                return n2
+        }
+}
 
+console.log(kurisDidesnis(8,18));
+console.log(kurisDidesnis(100,6));
+
+
+
+// 13. 
+function kurisMazesnis(n1,n2){
+        if(n1<n2){
+                return n1;
+        }else{
+                return n2
+        }
+}
+
+console.log(kurisMazesnis(8,18));
+console.log(kurisMazesnis(100,6));
 // 14.
+
+function arVienodi(n1,n2,n3){
+        if(n1===n2&&n1===n3)
+        {
+                return true
+        }else{
+                return false
+        }
+}
+console.log(arVienodi(3,2));
 
 // 15. 
 
 // 16.
+function arYraTarp(number){
+        if(number>=1&&number<=10){
+                return true;
+        }else{
+                return false
+        }
+}
+console.log(arYraTarp(50));
+console.log('***17****');
 
 // 17.
-
+function arYraTarp50(number){
+        if(number>=50&&number<=100){
+                return true;
+        }else{
+                return false
+        }
+}
+console.log(arYraTarp50(50));
 // 18.
+function ArN(sk){
+        if(sk<0){
+                return true
+
+        }else{
+                return false
+        }
+}
+console.log(ArN(-5));
 
 // 19.
 
@@ -968,6 +1052,30 @@ vienodi ('namas', 'namas');
 // 29.
 
 // 30.
+function shatNumber(number)
+{
+        let text='';
+        if (number>0) {
+                text='teigiama, ir'
+
+        }else if( number<0){
+                text= 'neigiamas, ir'
+        }else{
+                text= 'I am Zero';
+        }
+        if(number>100)
+        {text= 'didziulis'
+
+        }else{               
+         text=text+'esu maziukas'
+        }
+
+        return text
+}
+console.log(shatNumber(150));
+
+
+
 
 console.log('-----------uzduotys--------------');
 
