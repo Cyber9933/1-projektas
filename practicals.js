@@ -1173,3 +1173,74 @@ function realusLaikas (miestai, salyga)
 }
 
 realusLaikas(ManoMiestai, KelioSalygos)
+
+/*
+The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0. Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
+function differenceInAges(ages){
+  return [0, 0, 0];
+}
+
+*/
+
+function sortArray(array) {
+        let result = array.slice(); 
+        
+        for (let i = 0; i < Math.floor(array.length / 2); i++) {
+         
+          if ((i + 1) % 2 !== 0) {
+            
+            let temp = result[i];
+            result[i] = result[array.length - 1 - i];
+            result[array.length - 1 - i] = temp;
+          }
+        }
+        
+        return result;
+      }
+
+      console.log(sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4]);
+      
+
+      function cakes(recipe, available) {
+        let maxCakes = Infinity;
+        
+        // Iterate through each ingredient in the recipe
+        for (let ingredient in recipe) {
+          // Check if the ingredient is available
+          if (!available[ingredient]) {
+            return 0; // Missing an ingredient, so 0 cakes can be made
+          }
+          
+          // Calculate how many cakes can be made with this ingredient
+          const possibleCakes = Math.floor(available[ingredient] / recipe[ingredient]);
+          
+          // Update the maximum number of cakes (taking the minimum)
+          maxCakes = Math.min(maxCakes, possibleCakes);
+        }
+        
+        return maxCakes;
+}
+
+
+/*
+Task
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example
+[1, -4, 7, 12] => 1+7+12=20
+
+Note
+If there is nothing to sum, the sum is default to 0.
+*/
+
+function positiveSum(arr){
+        let sum=0;
+        for (let i = 0; i < arr.length; i++) {
+                const element = arr[i];
+                console.log(element);
+                
+        }
+        return sum
+}
+console.log(positiveSum[1, -4, 7, 12]);
+

@@ -293,6 +293,77 @@ const text5Updated2=text5.filter(t=>t);  //geriau nenaudoti, praskipina nes tusc
 console.log(text5Updated2);
 
 
+console.log('**FILL***');
+
+//fill - masyvo uzpildymas (kai reikia masyvo su pilnai uzpildyta reiksme)
+
+//visos reiksmes masyve vienodos
+const default5=[0,0,0,0,0];
+//uzpildo masyve 7 kartus skaiciumi 99. globali f-ja.
+const default7=Array(7).fill(99);
+console.log(default7);
+
+//array nurodo kiek vietu, o fill kokia reiksme turi buti uzpildyta
+
+const zeros=Array(10).fill(0);
+console.log(zeros);
+
+//pvz
+const negativees=Array(5).fill(false);
+console.log(negativees);
+
+const empty5=Array(10).fill('');
+console.log(empty5);
+
+const text6=Array(5).fill('taskas');
+console.log(text6);
+
+/////// gali pakeisti, bet naudojamas pagrindiam masyvui. pakeistu reiksmiu atstatyti negalima
+const demo=[10,2,8,4,6]
+console.log(demo);
+
+demo.fill(777);
+
+console.log(demo);
+
+
+console.log('**EVERY***');
+
+//every -  panasus i map ir filter. Salyga tenkinti turi visi
+
+const trees=['uosis', 'egle', 'azuolas', 'tuopa'];
+// ar visi siame masyve esantys zodziai yra ne tusti (s=medis)
+const allTreesValid=trees.every(s=>s.length>0);
+console.log(allTreesValid);
+
+//ar visi tenkina 5 ar ne visi
+const allTreesNameSize5=trees.every(s=>s.length===5);
+console.log(allTreesNameSize5);
+
+console.log('**SOME***');
+
+//some = kai kurie. salyga turi tenkinti kai kurie (naudojam pvz medzius auksciau trees)
+
+const someTreesValid=trees.some(s=>s.length>0);
+console.log(someTreesValid);
+
+const someTreesNameSize5=trees.some(s=>s.length===5);
+console.log(someTreesNameSize5);
+
+const someTreesNameSize10=trees.some(s=>s.length===10);
+console.log(someTreesNameSize10);
+
+
+console.log('**SORT***');
+//sort - rykiavimas, nuo a iki z, nuo 0 iki 9. yra didelis skirtumas nuo tekstinio ir skaitmeninio
+
+//atskiras file'as
+
+
+
+
+console.log('**REDUSE***');
+//reduse
 
 
 
