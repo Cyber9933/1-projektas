@@ -1180,7 +1180,32 @@ function differenceInAges(ages){
   return [0, 0, 0];
 }
 
+
+
+
+
+
 */
+
+console.log('***AMZIUS****');
+
+function differenceInAges(ages){
+        let min=Infinity;
+        let max=-Infinity;
+        for (let i=0; i<ages.length;i++)
+        {
+                if(ages[i]<min)
+                {min=ages[i]};
+                if(ages[i]>max){
+                        max=ages[i];
+                }
+        }
+let dif=max-min
+        return(min, max,dif)
+}
+
+
+
 
 function sortArray(array) {
         let result = array.slice(); 
@@ -1244,3 +1269,118 @@ function positiveSum(arr){
 }
 console.log(positiveSum[1, -4, 7, 12]);
 
+console.log('*********CODEWARS**********');
+
+
+console.log('*********su litrais**********');
+
+/*
+
+0.5litro per valanda,reikia grazinti kiek litru sugere
+time=3---->litres=1
+time=6.7---->litres=3
+time=11.8---->litres=5
+*/
+function litres(time){
+        return Math.floor(time*0.5);
+
+}
+
+console.log(Math.floor(6.7));
+console.log(Math.floor(3));
+console.log(Math.floor(5));
+
+console.log('*********magNumber**********');
+
+//eina karys per gatve ir sauna 3 kartus. kareivis turi viena is ginklu
+// apskaiciuoti kiek pasiimti detuviu
+
+function magNumber(info){
+        // apsiskaiciuojam kulkas
+        let mag=0;
+        if(info[0]==='PT92'){
+                mag=Math.ceil((3*info[1])/17); 
+        }       //apsiskaiciuojame kulkas
+        if(info[0]==='M4A1'||info[0]==='M16A2'){
+                mag=Math.ceil((3*info[1])/30); 
+        }  
+        return mag
+}
+console.log(magNumber);
+
+
+console.log('*********kuno mases indeksas**********');
+
+function bmi(weight, heigt){
+        let result='';
+        if (weight/(heigt**2)<=18.5)
+        {
+                result = 'Underweight'
+        }
+        if (weight/(heigt**2)<=25)
+                {
+                        result = 'normal'
+                }
+                 else if(weight/(heigt**2)<=30)
+                        {
+                                result = 'Overweight'
+                        }
+                        else {
+                                result='Obese'
+                        }
+        return result;
+}
+console.log(bmi(50,1.80));
+console.log(bmi(80,1.80));
+console.log(bmi(90,1.60));
+console.log(bmi(80,1.70));
+
+console.log('*********Drink About**********');
+
+function peopleWithAgeDrink(old){
+        if(old<14)
+        {
+                return 'drink today';
+        }else if(old<18){
+                return'drink coke';
+        }else if (old<21){
+                return'drink bear';
+        }else (old>22) 
+                return 'drink wiskey';
+        
+       
+}
+console.log(peopleWithAgeDrink(18));
+
+
+console.log('*****************');
+function isPangram(string){
+        let word='A-Z';
+        if (word<0)
+        {return true}
+        else (word>0)
+                return false
+   }
+      console.log(isPangram("The quick brown fox jumps over the lazy dog."));
+      console.log(isPangram("This is not a pangram."))
+      
+      
+      //
+
+      function isPangram(string) {
+        const lowerCaseString = string.toLowerCase();
+        const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+                         'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        
+      
+        for (let i = 0; i < alphabet.length; i++) {
+          if (lowerCaseString.indexOf(alphabet[i]) === -1) {
+            return false;
+          }
+        }
+        
+        return true;
+      }
+      
+      console.log(isPangram("The quick brown fox jumps over the lazy dog.")); // true
+      console.log(isPangram("This is not a pangram.")); // false
