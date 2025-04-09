@@ -45,5 +45,5 @@ for (const name of names){
 console.log(abbr);
 
 //su REDUCE f-ja
-const abbr2=names.reduce((total, name)=>total+name[0]+'.','')
+const abbr2=names.reduce((total, name)=>total+name[2]+'.','')
 console.log(abbr2);
