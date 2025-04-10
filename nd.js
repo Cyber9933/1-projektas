@@ -1081,3 +1081,122 @@ console.log('**********');
 /*
 
 */
+
+const text='pavasaris';
+
+const symbols={};
+/*symbols['L']=1;
+symbols['a']=1;
+symbols['b']=1;
+symbols['a']+=1;
+symbols['s']=1;
+*/
+////////////
+for(const s of text){
+    if(symbols[s]){
+        symbols[s]++
+    }else{
+        symbols[s]=1;
+    }
+}
+
+console.log(symbols);
+
+//2) surasti didziausia kieki
+/*const counts={
+    'L':1,
+    'a':2,
+    'b':1,
+    's':1,
+}
+    */
+
+let max=0;
+for(const s in symbols){
+    if(symbols[s]>max){
+        max=symbols[s];
+    }
+}
+console.log(max); //3vnt - a
+
+//3)
+/*const max=2;
+const letter='a';
+*/
+const maxSybols=[];
+for(const s in symbols){
+    if(symbols[s]===max){
+        maxSybols.push(s);
+    }
+}
+console.log(maxSybols);
+
+console.log('***');
+
+
+const texts = 'Hello'; // Apibrėžiame tekstą
+const letterCount = {};
+
+for (const letter of text) {
+  if (letter !== ' ') { // Ignoruojame tarpus
+    letterCount[letter] = (letterCount[letter] || 0) + 1;
+  }
+}
+
+let maxCount = 0;
+let maxLetters = [];
+
+for (const letter in letterCount) {
+  if (letterCount[letter] > maxCount) {
+    maxCount = letterCount[letter];
+    maxLetters = [letter];
+  } else if (letterCount[letter] === maxCount) {
+    maxLetters.push(letter);
+  }
+}
+console.log("Dažniausiai pasikartojančios raidės:", maxLetters);
+console.log("Pasikartoja", maxCount, "kartus")
+/*
+
+const text = "hello world"; // Apibrėžiame tekstą
+const letterCount = {};
+
+// Skaičiuojame kiekvienos raidės pasikartojimų skaičių
+for (const letter of text) {
+  if (letter !== ' ') { // Ignoruojame tarpus
+    letterCount[letter] = (letterCount[letter] || 0) + 1;
+  }
+}
+
+// Randame didžiausią pasikartojimų skaičių
+let maxCount = 0;
+let maxLetters = [];
+
+for (const letter in letterCount) {
+  if (letterCount[letter] > maxCount) {
+    maxCount = letterCount[letter];
+    maxLetters = [letter];
+  } else if (letterCount[letter] === maxCount) {
+    maxLetters.push(letter);
+  }
+}
+
+console.log("Dažniausiai pasikartojančios raidės:", maxLetters);
+console.log("Pasikartoja", maxCount, "kartus");
+*/
+
+function magNumber(info){
+  if (info[0] === "PT92") {
+      return  Math.ceil((3 * info[1]) / 17)
+    }
+  if (info[0] === "M4A1"){
+      return Math.ceil((3 * info[1]) / 30)
+    }
+  if (info[0] === "M16A2"){
+      return  Math.ceil((3 * info[1]) / 30)
+    }
+  if (info[0] === "PSG1"){
+      return  Math.ceil((3 * info[1]) / 5)
+    }
+}
+console.log(magNumber);

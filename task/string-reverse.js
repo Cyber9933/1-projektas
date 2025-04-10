@@ -62,7 +62,32 @@ console.log( stringReverse('vasara'));
 
 
 
+  
+  
+function reverseWords(str) {
+    if (typeof str !== 'string') {
+      return 'need string';
+    }
+    
+    
+    let words = str.split(' ');
+    console.log( words);
+    for (let words = 0; words <words.length; words++) {
+        const str = words[words];
+        
+    }
+    
+    let reversedWords = words.reverse();
+    
+    
+    return reversedWords.join(' ');
+  }
 
+console.log(reverseWords('The greatest victory is that which requires no battle'));
+
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
+  }
 
 
 
