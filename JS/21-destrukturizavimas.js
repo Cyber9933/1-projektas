@@ -202,7 +202,7 @@ for (const numberList of numbers){
     
 }
 
-console.log('***TRUMIAUSIAS VARIANTAS***');
+console.log('***TRUMPIAUSIAS VARIANTAS***');
 
 for (const [first,...rest] of numbers){
     
@@ -210,3 +210,50 @@ for (const [first,...rest] of numbers){
     console.log(result);
     
 }
+
+console.clear();
+console.log('***3 DALIS***');
+
+//minimumo radimo funkcija
+//[1,2,3]--->[[1,2,3]]
+Math.min(1);
+Math.min(1,2,3,4);
+
+function min(...list) {
+    console.log(list);
+    
+    return list[0];
+    
+}
+console.log(min(1));
+console.log(min(1,2,3));
+console.log(min(-1,-2,-3));
+console.log(min(-1,-2,-3,-4,-2,-4,-3,-1));
+
+function min(...list) {
+   let minimum=Infinity;
+    for (const number of list){
+        if(number<minimum){
+            minimum=number;
+        }
+    }
+    
+    return minimum;
+    
+}
+
+
+
+
+console.log('**************');
+
+
+const ddd=[1,2,3];
+console.log(ddd);
+console.log(...ddd);
+console.log(Math.min(...ddd));
+console.log(Math.max(...ddd));
+
+// vidinis  tritaskis(... - spred operatorius) isksleidzia ddd
+
+console.log('**************');

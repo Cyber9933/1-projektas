@@ -15,7 +15,7 @@
    - metodai:
      - ~~string method~~
      - array method
-     - object method
+     - object method (keys)
 - palyginimas:
    - if
    - ternary

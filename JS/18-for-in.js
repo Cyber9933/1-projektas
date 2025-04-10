@@ -1,7 +1,7 @@
 //FOR-IN
 // automatizuoti visa procesa
 // naudojama objektams
-
+//
 const person={
     name:'Jonas',
     age:99,
