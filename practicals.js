@@ -1311,25 +1311,24 @@ console.log(magNumber);
 
 console.log('*********kuno mases indeksas**********');
 
-function bmi(weight, heigt){
-        let result='';
-        if (weight/(heigt**2)<18.5)
-        {
-                result = 'Underweight'
+function bmi(weight, height) {
+        
+        let bmiValue = weight / (height ** 2);
+        let result = '';
+        
+        
+        if (bmiValue <= 18.5) {
+          result = 'Underweight';
+        } else if (bmiValue <= 25) {
+          result = 'Normal';
+        } else if (bmiValue <= 30) {
+          result = 'Overweight';
+        } else {
+          result = 'Obese';
         }
-        if (weight/(heigt**2)<=25)
-                {
-                        result = 'normal'
-                }
-                 else if(weight/(heigt**2)<=30)
-                        {
-                                result = 'Overweight'
-                        }
-                        else {
-                                result='Obese'
-                        }
+        
         return result;
-}
+      }
 console.log(bmi(50,1.80));
 console.log(bmi(80,1.80));
 console.log(bmi(90,1.60));
