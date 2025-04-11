@@ -1313,7 +1313,7 @@ console.log('*********kuno mases indeksas**********');
 
 function bmi(weight, heigt){
         let result='';
-        if (weight/(heigt**2)<=18.5)
+        if (weight/(heigt**2)<18.5)
         {
                 result = 'Underweight'
         }
