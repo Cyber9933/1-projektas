@@ -1383,3 +1383,141 @@ function isPangram(string){
       
       console.log(isPangram("The quick brown fox jumps over the lazy dog.")); // true
       console.log(isPangram("This is not a pangram.")); // false
+
+
+   
+    console.log("-----------------");
+    
+
+    
+//Gabijos uzduotys:
+
+//1. Count how many volwes are in string
+
+function countVolwes(str) {
+        const volwes='areouAEIOU';
+        let count=0;
+        for(let char of str)
+        {if(volwes.includes(char)){
+                count++;
+        }
+return count;
+        }
+        
+}
+console.log(countVolwes('a'));
+
+// 2. Reverse a string
+function reverseString(str){
+        const raides=str.split('');
+        console.log(raides); //patikriname ar veikia
+        let atvirkstinis='';
+        for ( let i=raides.length-1; i>=0; i--)
+                {
+                atvirkstinis+=raides[i];
+        }
+        return atvirkstinis;
+
+}
+console.log(reverseString('Ananasas'));
+
+//3. capitalize the first letter of eac word in Sentence
+
+function capitalizeWords(sentence){
+        return sentence.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ');
+}
+console.log( capitalizeWords('atejo jau pavasaris'));
+
+
+//4. Chec if a string  is a palindrome
+
+function isPalindrome(str) {
+        const cleaned=str.toLowerCase();
+        /*if (cleaned===cleaned.split('').reverse().join('')){
+                return true;
+        }else{
+                return false;
+        }
+        */
+       return cleaned===cleaned.split('').reverse().join('')
+}
+console.log(isPalindrome('sedek'));
+
+//5. Replace all spaces in a string with underscores
+
+function replaceSpaces(str){
+        return str.replaceAll('','_');
+}
+console.log(replaceSpaces('pavasaris atejo'));
+
+// 6. Count how many time a specific character appears i an string
+
+function countChar(str,char){
+        let count=0;
+        for(let c of str){
+                if(c===char) count++;
+        }
+        return count
+}
+console.log(countChar('pavasaris, dangus', 'a'));
+
+
+//7. remove all digitss from a string
+
+function removeDigits(str){
+        return str.replace(/[0-9]/g,'');  // g global ima visus parametrus nurodytus skliaustuose
+}
+console.log(removeDigits( 'ate2o, j4u'));
+
+// 8. Extract only letters 
+
+function onlyLetters(str){
+        return str.replace(/[^a-zA-Z]/g,'');
+        
+}
+console.log(onlyLetters('an88giew55!'));
+
+//9. Find the longest word in sentence
+
+function longestWord(sentence){
+        const zodziaia=sentence.split('');
+        let maxlen=0;
+        let zMaxl='';
+        for(zodis in zodziaia){
+                zodziaia[zodis]=zodziaia[zodis].replace(/[^a-zA-Z]/g,'')
+                if (zodziaia[zodis].length>maxlen){
+                        zMaxl=zodziaia[zodis];
+                        maxlen=zodziaia[zodis].length
+                }
+        } return zMaxl
+}
+console.log( longestWord('atejo jau Pavasaris'));
+
+
+//10. Convert a atrin to title case
+
+//function toTitle
+// 11. reclace  in a strin **
+
+function maskVolwes(str){
+        return str.replace(/[aeiouyAEIOUY]/g,'*')
+}
+
+console.log(maskVolwes('Pavasaris'));
+
+
+//13. convert a sentence to kebab-case (kebab vietoj taskeliu bruksneliai)
+function toKebabCase(str){
+        return str.toLowerCase().replaceAll(/ /g,'-')
+}
+
+console.log(toKebabCase('atejo jau pavasaris'));
+
+
+//14.convert a sentence to Camel-case
+function toCamelCase(str){
+        return str.toLowerCase().replaceAll(' ','')
+}
+
+console.log(toCamelCase('Atejo jau pavasaris'));
+
