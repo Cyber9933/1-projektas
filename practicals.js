@@ -1516,8 +1516,133 @@ console.log(toKebabCase('atejo jau pavasaris'));
 
 //14.convert a sentence to Camel-case
 function toCamelCase(str){
-        return str.toLowerCase().replaceAll(' ','')
+        const word=str.split(' ')
+        let cameCase='';
+        for (let i=0; i<word.length;i++){
+                if (i===0){
+                        cameCase+=word[i].toLowerCase()
+                }else{
+                        cameCase=word[i].charAt(0).toUpperCase();
+                        cameCase+=word[i].slice(1).toLowerCase();
+                }
+        }
+        return cameCase
 }
 
 console.log(toCamelCase('Atejo jau pavasaris'));
 
+//15. Check if string contains only numbers
+function isOnlyNumbers(str){
+        const numbers='0123456789';
+        for(char in str){
+                if (numbers.includes(str[char])===false){
+                        return false;
+                }
+        }
+        return true;
+}
+console.log(isOnlyNumbers('1vienas123'));
+console.log(isOnlyNumbers('1123'));
+console.log(isOnlyNumbers('vienas123'));
+
+
+//18. Check if two strings are anagrams
+
+/*function areAnagrams(str1,str2){
+        const normalize=str=>str.toLowerCase().split('').sort().join('');
+        return normalize(str1)===normalize(str2)
+}
+console.log(areAnagrams('piena, asas'));
+*/
+
+//19. Shorten a sentence to max length and add '--'
+function truncate(str, maxLength){
+        if(str.length<maxLength){
+                return str+'--'
+        }else{
+                return str.slice(0, maxLength)+'--'
+        }
+}
+console.log(truncate('pomidoras',4));
+
+
+// 20. Swap the case of every letter
+/*function swapCase(str){
+        const raides=str.split('');
+        let zodis='';
+        for (i in raides){
+                if (raides[i]===raides.toLowerCase()){
+                        zodis +=raides[i].toUperCase()
+                }else{
+                        zodis +=raides[i].toLowerCase();
+                }
+        }
+        return zodis
+}
+console.log(swapCase('LabaDiena'));
+*/
+
+//22. Remove puntuation from a sentence
+
+function removePunctuation(str){
+        return str.replace(/[.,!?;:-]/g,'')
+}
+console.log(removePunctuation('hi!...- Nejaugi pavasaris'));
+
+//23. Split a sentence into words
+function splitWords(str){
+return str.trim().split(' ')
+}
+console.log(splitWords('atejo jau pavasaris'));
+
+// 24  Count uppercase letters
+
+function countUpperCase(str){
+ let kiekis=str.match(/[A-Z]/g)
+ console.log((kiekis));
+ 
+ return kiekis//.length;
+}
+console.log(countUpperCase('atejo jau pavasaris'));
+
+//25. Check if word is incluede
+
+function containWord(sentence, word){
+        return sentence.toLowerCase().includes(word.toLowerCase());
+}
+
+console.log(containWord( 'Pavasris jau atejo', 'atejo'));
+
+//26. Replace all instance of word
+function replacesAllWords(str,target, replacement){
+        return str.split(target).join(replacement)
+}
+
+console.log(replacesAllWords('atejo jau pavasaris', 'pavasaris', 'vasara'));
+
+
+//32 Mask all but 4 charracters
+
+function maskString(str){
+        return str.slice(-4).padStart(str.length, '*');
+
+}
+console.log(maskString('Pavasaris'));
+
+//33. Capitalize every second letterLengthfun
+
+function capitalizeEverySecond(str){
+        const raides=str.split('');
+        let zodis ='';
+        for(let i=0; i<str.length;i++){
+                if(i%2===0){
+                        zodis+=raides[i].toUpperCase();
+                }else{
+                        zodis+=raides[i].toLowerCase();
+
+                }
+        }
+        return zodis;
+}
+
+console.log(capitalizeEverySecond('mano namas'));
