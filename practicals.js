@@ -1671,6 +1671,4 @@ function strCount(str, letter){
       }
 
       //
-///
 
-//
